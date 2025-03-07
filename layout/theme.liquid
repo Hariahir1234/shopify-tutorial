@@ -29,7 +29,8 @@
     {% render 'meta-tags' %}
 
 
-     <link rel="stylesheet" href="{{ 'slick-theme.css' | asset_url }}">
+    {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+   
     <link rel="stylesheet" href="{{ 'slick.css' | asset_url }}">
 
 
