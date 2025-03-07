@@ -1,14 +1,18 @@
+
+
 @font-face {
-  font-family: "Remingo_By_Shineink";
-  src: url("{{ 'https://cdn.shopify.com/s/files/1/0669/8375/5820/files/Remingo_By_Shineink.otf?v=1741253274' | asset_url }}") format("otf"),
-  
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Remingo';
+    src: url('https://cdn.shopify.com/s/files/1/0490/7971/3959/files/Remingo.woff2?v=1721366365') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0490/7971/3959/files/Remingo.woff?v=1721366365') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 
 h1, h2, h3 {
 h1, h2, h3 {
-    font-family: Remingo_By_Shineink,serif !important;
+    font-family: Remingo,serif !important;
 }
 }
 
