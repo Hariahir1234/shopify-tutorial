@@ -60,7 +60,11 @@
     "custom_collection_gtkwcy": {
       "type": "custom-collection",
       "settings": {
-        "collection-setting": "scroll-collection"
+        "collection-setting": "scroll-collection",
+        "text-setting": "Collection",
+        "range-top-setting": 30,
+        "range-bottom-setting": 80,
+        "select-setting": "35px"
       }
     }
   },
