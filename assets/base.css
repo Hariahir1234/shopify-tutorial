@@ -3620,7 +3620,7 @@ details-disclosure > details {
 }
 
 .banner__buttons a .button:before,.banner__buttons a .button:after{
-  display:none
+  content:none
 }
 
 
