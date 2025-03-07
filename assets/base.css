@@ -7,7 +7,9 @@
 }
 
 h1, h2, h3 {
-  font-family: "Remingo_By_Shineink", serif !importent;
+h1, h2, h3 {
+    font-family: Remingo_By_Shineink,serif !important;
+}
 }
 
 :root {
