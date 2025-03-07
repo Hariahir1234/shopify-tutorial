@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Remingo';
-  src: url('{{ "Remingo.woff2" | asset_url }}') format('woff2'),
-       url('{{ "Remingo.woff" | asset_url }}') format('woff');
+  src: url('{{ "Remingo.ttf" | asset_url }}') format('ttf'),
+       url('{{ "Remingo.otf" | asset_url }}') format('otf');
   font-weight: normal;
   font-style: normal;
 }
