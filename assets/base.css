@@ -1,9 +1,6 @@
 @font-face {
-  font-family: 'Remingo';
-  src: url('{{ "Remingo.ttf" | asset_url }}') format('ttf'),
-       url('{{ "Remingo.otf" | asset_url }}') format('otf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Remingo";
+  src: url("{{ '[fRemingo]' | asset_url }}") format("[OTF]");
 }
 
 h1,h1,h3 {
