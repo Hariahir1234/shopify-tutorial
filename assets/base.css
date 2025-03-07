@@ -45,6 +45,11 @@
   letter-spacing: 0.08em;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1,
 h2 {
   font-family: "Remingo" !important;
