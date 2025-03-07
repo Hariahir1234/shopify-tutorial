@@ -24,7 +24,7 @@
 
   <div class="product-collections" style="padding-top:{{ section.settings.range-top-setting }};padding-bottom:{{ section.settings.range-bottom-setting }}">
     
-  
+    
       
       {% for product in section.settings.collection-setting.products limit:5 %}
 
@@ -82,7 +82,26 @@
         "unit": "px",
         "label": "Padding-Bottom",
         "default": 20
-      }
+      },
+      {
+        "type": "select",
+        "id": "select-setting",
+        "label": "Select Font Size",
+        "options": [
+             {
+                "value": "small",
+               "label": "small"
+              } ,
+                       {
+                "value": "medium",
+               "label": "medium"
+              } ,
+                       {
+                "value": "large",
+               "label": "large"
+              } ,
+        ]
+        }
     ],
     "presets": [
        {"name":"Custom Collection" }
