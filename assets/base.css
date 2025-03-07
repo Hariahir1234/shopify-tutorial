@@ -3619,6 +3619,11 @@ details-disclosure > details {
     color: black;
 }
 
+.banner__buttons .button:before{
+  display:none
+}
+
+
 
 .header{
   display: grid;
