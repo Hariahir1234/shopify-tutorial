@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Remingo";
-  src: url("{{ '[fRemingo]' | asset_url }}") format("[OTF]");
+  font-family: "Remingo_By_Shineink";
+  src: url("{{ '[Remingo_By_Shineink]' | asset_url }}") format("[OTF]");
 }
 
 h1,h1,h3 {
-  font-family: 'Remingo', serif;
+  font-family: 'Remingo_By_Shineink', serif;
 }
 
 
