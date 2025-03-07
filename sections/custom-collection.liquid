@@ -27,6 +27,7 @@
     <div> &nbsp </div>
 
     <div style="display:flex;justify-content:space-between;align-items: center">
+          
          <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
               {{ section.settings.text-setting }}
         </h2>
@@ -45,17 +46,19 @@
   <div class="product-collections">
     
     
-      
-      {% for product in section.settings.collection-setting.products limit:5 %}
+     {% if  section.settings.collection-setting.products  %}
+       
+        {% for product in section.settings.collection-setting.products limit:5 %}
 
         <div class="product">
              {{ product.featured_image | image_url: width: master | image_tag  }}
         </div>
-    
-   
-      
-      {% endfor %}
+               
+        {% endfor %}
         
+       
+     {% endif %} 
+
   
   </div>
   
