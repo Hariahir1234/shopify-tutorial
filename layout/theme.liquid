@@ -29,6 +29,9 @@
     {% render 'meta-tags' %}
 
 
+   <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+
+
   
     
 
@@ -372,8 +375,11 @@
       };
     </script>
 
+
+      <script src="{{ 'jquery.min.js' | asset_url }}" async></script>
+
       <script src="{{ 'slick.min.js' | asset_url }}" async></script>
-    <script src="{{ 'jquery.min.js' | asset_url }}" async></script>
+  
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
