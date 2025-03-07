@@ -11,6 +11,18 @@
 
 
 
+@font-face {
+    font-family: 'NanumGothic-Regular';
+    src: url('https://cdn.shopify.com/s/files/1/0669/8375/5820/files/NanumGothic-Regular.ttf?v=1741342401') format('ttf'),
+        url('https://cdn.shopify.com/s/files/1/0669/8375/5820/files/Remingo.woff?v=1741341450') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
 h1, h2, h3 {
     font-family: "Remingo" !important;
 
