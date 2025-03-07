@@ -62,7 +62,7 @@
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Collection",
-        "range-top-setting": 30,
+        "range-top-setting": 28,
         "range-bottom-setting": 80,
         "select-setting": "45px"
       }
