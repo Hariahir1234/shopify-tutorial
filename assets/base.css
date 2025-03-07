@@ -12,7 +12,7 @@
 
 
 @font-face {
-    font-family: 'NanumGothic-Regular';
+    font-family: 'NanumGothic';
     src: url('https://cdn.shopify.com/s/files/1/0669/8375/5820/files/NanumGothic-Regular.ttf?v=1741342401') format('ttf'),
    
     font-weight: normal;
@@ -20,7 +20,13 @@
     font-display: swap;
 }
 
-
+.banner__text p {
+    font-family: NanumGothic;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 8%;
+}
 
 
 h1, h2, h3 {
