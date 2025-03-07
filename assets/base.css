@@ -3619,7 +3619,7 @@ details-disclosure > details {
     color: black;
 }
 
-.banner__buttons a .button:before,.banner__buttons a .button:after{
+.banner__buttons  .button:before,.banner__buttons.button:after{
   content:none
 }
 
