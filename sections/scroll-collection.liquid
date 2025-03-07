@@ -1,0 +1,151 @@
+
+{%  stylesheet %}
+.product-collections {
+    display: flex;
+    gap: 30px;
+}
+
+  .product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  .collection-title {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+}
+
+.show-more {
+    display: flex;
+    align-items: center;
+  
+    justify-content: end;
+    gap: 10px;
+}
+    .show-more  img{
+     width:6%
+  }
+{% endstylesheet %}
+
+
+<div class="page-width">
+
+
+  <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
+
+  <div class="collection-title"> 
+    <div> &nbsp </div>
+
+    <div style="display:flex;justify-content:space-between;align-items: center">
+          
+         <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
+              {{ section.settings.text-setting }}
+        </h2>
+
+         <a href="{{ section.settings.collection-setting.url }}" class="show-more">
+            View all  <img src="{{ 'icon-arrow.svg' | asset_url }}" alt="Arrow">
+          </a> 
+          
+    </div>
+  
+  </div>
+    
+ 
+
+
+  <div class="product-collections">
+    
+    
+     {% if  section.settings.collection-setting.products  %}
+       
+        {% for product in section.settings.collection-setting.products limit:5 %}
+
+        <div class="product">
+            <a href="{{ product.url }}">
+              {{ product.featured_image | image_url: width: master | image_tag  }}
+            </a> 
+        </div>
+               
+        {% endfor %}
+        
+       
+     {% endif %} 
+
+  
+  </div>
+  
+
+ </div>
+
+</div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Custom Collection",
+    "class":"collection-cover",
+    
+    "settings": [
+      {
+        "type": "collection",
+        "id":"collection-setting",
+        "label": "Select Collection"
+      },
+      {
+        "type": "text",
+        "id": "text-setting",
+        "label": "Enter Text",
+        "default":"Collection"
+      },{
+        "type": "range",
+        "id": "range-top-setting",
+        "min": 20,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding Top",
+        "default": 20
+      }
+      ,{
+        "type": "range",
+        "id": "range-bottom-setting",
+        "min": 20,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding-Bottom",
+        "default": 20
+      },
+      {
+        "type": "select",
+        "id": "select-setting",
+        "label": "Select Font Size",
+        "options": [
+             {
+                "value": "15px",
+               "label": "small"
+              } ,
+                       {
+                "value": "25px",
+               "label": "medium"
+              } ,
+                       {
+                "value": "35px",
+               "label": "large"
+              } ,
+             {
+                "value": "45px",
+               "label": "extra large"
+              } ,
+        ]
+        }
+    ],
+    "presets": [
+       {"name":"Custom Collection" }
+    ]
+  }
+{% endschema %}
