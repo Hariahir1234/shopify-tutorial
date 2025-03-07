@@ -433,7 +433,7 @@
   }
 }
 
-.banner__heading {
+/* .banner__heading {
     margin-bottom: 0;
     font-weight: 400;
     font-size: 72px;
@@ -441,7 +441,7 @@
     letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
-}
+} */
 .banner__box .banner__heading + * {
   margin-top: 1rem;
 }
