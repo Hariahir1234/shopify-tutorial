@@ -3753,7 +3753,7 @@ details-disclosure > details {
 }
 
 h2.banner__heading.inline-richtext.hxxl {
-  margin: inherit;
+  margin: 0;
 }
 
 .header {
