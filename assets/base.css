@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Remingo_By_Shineink";
-  src: url("{{ 'https://cdn.shopify.com/s/files/1/0669/8375/5820/files/Remingo_By_Shineink.otf?v=1741253274' | asset_url }}") format("ttf"),
+  src: url("{{ 'https://cdn.shopify.com/s/files/1/0669/8375/5820/files/Remingo_By_Shineink.otf?v=1741253274' | asset_url }}") format("otf"),
   
   font-weight: normal;
   font-style: normal;
