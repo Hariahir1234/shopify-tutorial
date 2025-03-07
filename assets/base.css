@@ -1,12 +1,13 @@
 @font-face {
   font-family: "Remingo_By_Shineink";
-  src: url("{{ '[Remingo_By_Shineink]' | asset_url }}") format("[OTF]");
+  src: url("{{ 'Remingo_By_Shineink.otf' | asset_url }}") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1,h1,h3 {
-  font-family: 'Remingo_By_Shineink', serif;
+h1, h2, h3 {
+  font-family: "Remingo_By_Shineink", serif;
 }
-
 
 :root {
   --alpha-button-background: 1;
