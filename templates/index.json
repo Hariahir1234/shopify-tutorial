@@ -71,7 +71,7 @@
       "type": "scroll-collection",
       "settings": {
         "collection-setting": "scroll-collection",
-        "text-setting": "Most",
+        "text-setting": "Most Selled Product",
         "range-top-setting": 20,
         "range-bottom-setting": 20,
         "select-setting": "45px"
