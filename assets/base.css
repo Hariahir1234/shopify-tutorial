@@ -3609,6 +3609,13 @@ details-disclosure > details {
 }
 
 
+.banner__buttons {
+    background: white;
+    color: black;
+    border-radius: 30px;
+}
+
+
 .header{
   display: grid;
   grid-template-columns: 1fr;
