@@ -93,10 +93,37 @@
             "name-text-setting": "William Jones",
             "position-text-setting": "Designer"
           }
+        },
+        "custom_black_U3xjD3": {
+          "type": "custom_black",
+          "settings": {
+            "textarea-setting": "",
+            "name-text-setting": "",
+            "position-text-setting": ""
+          }
+        },
+        "custom_black_nnKGgm": {
+          "type": "custom_black",
+          "settings": {
+            "textarea-setting": "",
+            "name-text-setting": "",
+            "position-text-setting": ""
+          }
+        },
+        "custom_black_T9h3dy": {
+          "type": "custom_black",
+          "settings": {
+            "textarea-setting": "",
+            "name-text-setting": "",
+            "position-text-setting": ""
+          }
         }
       },
       "block_order": [
-        "custom_black_yFx3YW"
+        "custom_black_yFx3YW",
+        "custom_black_U3xjD3",
+        "custom_black_nnKGgm",
+        "custom_black_T9h3dy"
       ],
       "settings": {
         "text-setting": "What they’re saying",
