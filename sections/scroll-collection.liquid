@@ -34,10 +34,12 @@
                     <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
                         {{ section.settings.text-setting }}
                     </h2>
-                    <div> </div>
-                    <a href="{{ section.settings.collection-setting.url }}" class="show-more">
+                    <div class="scroll-button">
+                      
+                          <a href="{{ section.settings.collection-setting.url }}" class="show-more">
                         View all <img src="{{ 'icon-arrow.svg' | asset_url }}" alt="Arrow">
-                    </a> 
+                    </a> </div>
+              
                 </div>
             </div>
         </div>
