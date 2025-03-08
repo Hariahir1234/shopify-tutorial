@@ -55,7 +55,10 @@
                     </h2>
                     <div class="scroll-button">
                         <span>
-                            <button class="scroll-left">{{ 'back-arrow.png' | image_url: width: 10  | image_tag }}</button>
+                            <button class="scroll-left">
+                                   {{ product.featured_image | image_url: width: master | image_tag  }}
+                            
+                            </button>
                             <button class="scroll-right">&#9655;</button>
                         </span>
                       
