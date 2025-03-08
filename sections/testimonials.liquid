@@ -22,22 +22,22 @@
       
 
        <div class="testimonial-slider-wrapper">
-    <button class="scroll-left">❮</button>
+            <button class="scroll-left">❮</button>
     
-    <div class="testimonial-collection">
-        {% if section.blocks %}
-            {% for block in section.blocks %}
-                <div class="product" style="text-align:center">
-                    <p>{{ block.settings.textarea-setting }}</p>  
-                    <strong>{{ block.settings.name-text-setting }}</strong>  
-                    <div>{{ block.settings.position-text-setting }}</div>  
-                </div>
-            {% endfor %}
-        {% endif %} 
-    </div>
+                  <div class="testimonial-collection">
+                      {% if section.blocks %}
+                          {% for block in section.blocks %}
+                              <div class="product" style="text-align:center">
+                                  <p>{{ block.settings.textarea-setting }}</p>  
+                                  <strong>{{ block.settings.name-text-setting }}</strong>  
+                                  <div>{{ block.settings.position-text-setting }}</div>  
+                              </div>
+                          {% endfor %}
+                      {% endif %} 
+                  </div>
 
-    <button class="scroll-right">❯</button>
-</div>
+          <button class="scroll-right">❯</button>
+      </div>
 
     </div>
 </div>
