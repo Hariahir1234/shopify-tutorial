@@ -377,9 +377,8 @@
     </script>
 
 
-      <script src="{{ 'jquery.js' | asset_url }}" async></script>
-
-      <script src="{{ 'slick.min.js' | asset_url }}" async></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    {{ 'slick.min.js' | asset_url | script_tag }}
   
 
     {%- if settings.predictive_search_enabled -%}
