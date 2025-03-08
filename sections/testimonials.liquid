@@ -22,9 +22,10 @@
       
 
        <div class="testimonial-slider-wrapper">
-            <button class="scroll-left">❮</button>
+          
     
                   <div class="testimonial-collection">
+                      <button class="scroll-left">❮</button>
                       {% if section.blocks %}
                           {% for block in section.blocks %}
                               <div class="product" style="text-align:center">
@@ -34,9 +35,10 @@
                               </div>
                           {% endfor %}
                       {% endif %} 
+                           <button class="scroll-right">❯</button>
                   </div>
 
-          <button class="scroll-right">❯</button>
+   
       </div>
 
     </div>
