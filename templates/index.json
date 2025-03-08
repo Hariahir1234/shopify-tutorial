@@ -82,12 +82,35 @@
       "settings": {
         "text-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy Lorem Ipsum has been the industry's stand....."
       }
+    },
+    "testimonials_7cMmpB": {
+      "type": "testimonials",
+      "blocks": {
+        "custom_black_yFx3YW": {
+          "type": "custom_black",
+          "settings": {
+            "textarea-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960.",
+            "name-text-setting": "William Jones",
+            "position-text-setting": "Designer"
+          }
+        }
+      },
+      "block_order": [
+        "custom_black_yFx3YW"
+      ],
+      "settings": {
+        "text-setting": "Collection",
+        "range-top-setting": 20,
+        "range-bottom-setting": 20,
+        "select-setting": "15px"
+      }
     }
   },
   "order": [
     "image_banner",
     "custom_collection_gtkwcy",
     "scroll_collection_43MJVw",
-    "merquee_kbtRPK"
+    "merquee_kbtRPK",
+    "testimonials_7cMmpB"
   ]
 }
