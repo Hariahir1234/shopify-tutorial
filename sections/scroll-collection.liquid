@@ -51,7 +51,7 @@
                             {{ product.featured_image | image_url: width: master | image_tag  }}
                         </a> 
                         <strong>{{ product.title }}</strong>
-                        <h6>{{ product.price | money }}</h5>
+                        <div>{{ product.price | money }}</div>
                     </div>
                 {% endfor %}
             {% endif %} 
