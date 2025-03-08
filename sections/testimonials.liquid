@@ -21,8 +21,10 @@
             </div>
       
 
+       {% if section.blocks %}
         <div class="testimonial-collection">
-            {% if section.blocks %}
+           
+                
                 {% for block in section.blocks %}
                     <div class="product" style="text-align:center">
                         <p>{{ block.settings.textarea-setting }}</p>  
@@ -30,8 +32,9 @@
                          <div>{{ block.settings.position-text-setting }}</div>  
                     </div>
                 {% endfor %}
-            {% endif %} 
+         
         </div>
+         {% endif %} 
     </div>
 </div>
 
