@@ -17,7 +17,7 @@
 
         <div class="testimonial-collection">
             {% if section.blocks %}
-                {% for block in section.settings.collection-setting.products %}
+                {% for block in section.blocks %}
                     <div class="product">
                         <a href="{{ product.url }}">
                             {{ product.featured_image | image_url: width: master | image_tag  }}
