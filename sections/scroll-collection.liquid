@@ -66,6 +66,7 @@
             <a href="{{ product.url }}">
               {{ product.featured_image | image_url: width: master | image_tag  }}
             </a> 
+            <strong>{{ product.title }}</strong>
             <p> {{ product.price }} </p>
         </div>
                
