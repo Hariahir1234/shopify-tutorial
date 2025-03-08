@@ -76,18 +76,11 @@
         "range-bottom-setting": 100,
         "select-setting": "45px"
       }
-    },
-    "merquee_7FDczL": {
-      "type": "merquee",
-      "settings": {
-        "text-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy Lorem Ipsum has been the industry's stand....."
-      }
     }
   },
   "order": [
     "image_banner",
     "custom_collection_gtkwcy",
-    "scroll_collection_43MJVw",
-    "merquee_7FDczL"
+    "scroll_collection_43MJVw"
   ]
 }
