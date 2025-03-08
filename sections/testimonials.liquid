@@ -19,9 +19,7 @@
             {% if section.blocks %}
                 {% for block in section.blocks %}
                     <div class="product">
-                        <a href="{{ product.url }}">
-                            {{ product.featured_image | image_url: width: master | image_tag  }}
-                        </a> 
+                        <p>{{ block.settings.textarea-setting }}</p>  
                         <strong>{{ product.title }}</strong>
                         <div>{{ product.price | money }}</div>
                     </div>
