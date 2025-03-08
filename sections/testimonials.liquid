@@ -1,6 +1,206 @@
+{% stylesheet %}
+
+.product img {
+    width: 100%;
+    max-height: 512px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+  
+.collection-title.scroll-collection {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.product.slick-slide {
+    margin: 16px;
+}
+.show-more {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.scroll-button .show-more img {
+    width: 17%;
+}
+  
+.scroll-button {
+    display: flex;
+    gap: 10px;
+    width: 25%;
+    justify-content: space-between;
+}
+.scroll-button button {
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+.scroll-button span {
+    display: flex;
+    gap: 20px;
+}
+  
+{% endstylesheet %}
+
+<div class="page-width">
+    <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
+        <div class="collection-title scroll-collection"> 
+            <div style="width: 60%">
+                <div style="display:flex;justify-content:space-between;align-items: center">
+                    <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
+                        {{ section.settings.text-setting }}
+                    </h2>
+                    <div class="scroll-button">
+                        <span>
+                            <button class="scroll-left">
+                                   {{- 'back-arrow.svg' | inline_asset_content -}}
+                               
+                            
+                            </button>
+                            <button class="scroll-right">  {{- 'next-arrow.svg' | inline_asset_content -}}</button>
+                        </span>
+                      
+                        <a href="{{ section.settings.collection-setting.url }}" class="show-more">
+                          <button class="button button--secondary">
+                             View all
+                          </button>
+                           
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-collections">
+            {% if section.settings.collection-setting.products %}
+                {% for product in section.settings.collection-setting.products %}
+                    <div class="product">
+                        <a href="{{ product.url }}">
+                            {{ product.featured_image | image_url: width: master | image_tag  }}
+                        </a> 
+                        <strong>{{ product.title }}</strong>
+                        <div>{{ product.price | money }}</div>
+                    </div>
+                {% endfor %}
+            {% endif %} 
+        </div>
+    </div>
+</div>
+
 {% schema %}
-  {
-    "name": "Testimonial",
-    "settings": []
-  }
+{
+    "name": "Scroll Custom Collection",
+    "class": "collection-cover",
+    "settings": [
+        {
+            "type": "collection",
+            "id": "collection-setting",
+            "label": "Select Collection"
+        },
+        {
+            "type": "text",
+            "id": "text-setting",
+            "label": "Enter Text",
+            "default": "Collection"
+        },
+        {
+            "type": "range",
+            "id": "range-top-setting",
+            "min": 20,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Top",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "range-bottom-setting",
+            "min": 20,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding-Bottom",
+            "default": 20
+        },
+        {
+            "type": "select",
+            "id": "select-setting",
+            "label": "Select Font Size",
+            "options": [
+                {
+                    "value": "15px",
+                    "label": "small"
+                },
+                {
+                    "value": "25px",
+                    "label": "medium"
+                },
+                {
+                    "value": "35px",
+                    "label": "large"
+                },
+                {
+                    "value": "45px",
+                    "label": "extra large"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Scroll Custom Collection"
+        }
+    ]
+}
 {% endschema %}
+
+<script>
+$(document).ready(function() {
+    var $slider = $('.scroll-collections');
+    $slider.slick({
+        autoplay: true,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.scroll-left').click(function() {
+        $slider.slick('slickPrev');
+    });
+
+    $('.scroll-right').click(function() {
+        $slider.slick('slickNext');
+    });
+});
+</script>
