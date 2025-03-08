@@ -72,7 +72,7 @@
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Most Selled Product",
-        "range-top-setting": 43,
+        "range-top-setting": 20,
         "range-bottom-setting": 100,
         "select-setting": "45px"
       }
