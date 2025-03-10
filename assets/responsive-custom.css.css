@@ -4,6 +4,10 @@
     flex-direction: column;
   }
 
+  .shopify-section .page-width div {
+    padding: 10px !important;
+  }
+
   .collection-title.scroll-collection .top {
     width: 100%;
     text-align: center;
