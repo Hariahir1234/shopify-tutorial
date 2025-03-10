@@ -19,4 +19,9 @@
   .scroll-button {
     justify-content: center;
   }
+
+  h2.font {
+    font-size: 30px !important;
+    margin: 0;
+  }
 }
