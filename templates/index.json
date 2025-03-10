@@ -160,14 +160,12 @@
         },
         "custom_block_dVKHBb": {
           "type": "custom-block",
-          "disabled": true,
           "settings": {
             "blog-setting": "side-blog"
           }
         },
         "custom_block_cBdf6p": {
           "type": "custom-block",
-          "disabled": true,
           "settings": {
             "blog-setting": "side-blog"
           }
