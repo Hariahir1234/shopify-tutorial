@@ -151,10 +151,33 @@
           "settings": {
             "blog-setting": "main-blog"
           }
+        },
+        "custom_block_rntcwc": {
+          "type": "custom-block",
+          "settings": {
+            "blog-setting": "side-blog"
+          }
+        },
+        "custom_block_dVKHBb": {
+          "type": "custom-block",
+          "disabled": true,
+          "settings": {
+            "blog-setting": "side-blog"
+          }
+        },
+        "custom_block_cBdf6p": {
+          "type": "custom-block",
+          "disabled": true,
+          "settings": {
+            "blog-setting": "side-blog"
+          }
         }
       },
       "block_order": [
-        "custom_block_m4Bjij"
+        "custom_block_m4Bjij",
+        "custom_block_rntcwc",
+        "custom_block_dVKHBb",
+        "custom_block_cBdf6p"
       ],
       "settings": {
         "text-setting": "Read our blog",
