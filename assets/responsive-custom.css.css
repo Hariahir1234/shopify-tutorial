@@ -39,4 +39,8 @@
   .product.slick-slide {
     margin: 3px;
   }
+
+  .testimonial-cover {
+    width: 82%;
+  }
 }
