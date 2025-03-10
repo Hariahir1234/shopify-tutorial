@@ -6,7 +6,7 @@
 
 .slick-next:before {
     content: '';
-    background-image: url('{{ "slick-next.svg" | asset_url }}');
+    background-image: url('{{ "slick-next.svg" | inline_asset_content }}');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
@@ -16,7 +16,7 @@
 
 .slick-prev:before {
     content: '';
-    background-image: url('{{ "slick-back.svg" | asset_url }}');
+    background-image: url('{{ "slick-back.svg" | inline_asset_content }}');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
