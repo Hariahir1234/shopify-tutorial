@@ -3,4 +3,9 @@
   .collection-title .top {
     flex-direction: column;
   }
+
+  .collection-title.scroll-collection .top {
+    width: 100%;
+    text-align: center;
+  }
 }
