@@ -59,7 +59,6 @@
     },
     "custom_collection_gtkwcy": {
       "type": "custom-collection",
-      "disabled": true,
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Collection",
@@ -70,7 +69,6 @@
     },
     "scroll_collection_43MJVw": {
       "type": "scroll-collection",
-      "disabled": true,
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Most Selled Product",
@@ -81,6 +79,7 @@
     },
     "merquee_kbtRPK": {
       "type": "merquee",
+      "disabled": true,
       "settings": {
         "text-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy Lorem Ipsum has been the industry's stand....."
       }
@@ -136,6 +135,7 @@
         "custom_black_hEkrG8",
         "custom_black_F98YXM"
       ],
+      "disabled": true,
       "settings": {
         "text-setting": "What they’re saying",
         "range-top-setting": 20,
