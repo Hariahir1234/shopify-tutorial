@@ -6,6 +6,32 @@
     margin: 0 auto;
 }
 
+
+  .slick-prev:before, .slick-next:before {
+    font-family: inherit !important;
+}
+
+.slick-next:before {
+    content: '';
+    background-image: url('{{ "slick-next.svg" | inline_asset_content }}') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.slick-prev:before {
+    content: '';
+    background-image: url('{{ "slick-back.svg" | inline_asset_content }}') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+
   .testimonial-cover .slick-prev:before,.testimonial-cover .slick-next:before {
    
     color: black;
