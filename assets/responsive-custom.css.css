@@ -9,7 +9,8 @@
     text-align: center;
   }
 
-  .collection-title {
+  .collection-title,
+  .collection-title.scroll-collection {
     width: 100%;
     display: flex;
     justify-content: center;
