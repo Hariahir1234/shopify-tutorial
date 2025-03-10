@@ -28,15 +28,16 @@
                  {% for block in section.blocks %}
                           {% assign blog = blogs[block.settings.blog-setting] %}
                                {% if blog.title == 'Side Blog' %}
-                         {% for article in blog.articles limit:3 %}
-                            <a href="{{ article.url }}">
-                              {{ article.image | image_url: width: master | image_tag }}
-                              <h3>{{ article.title }}</h3>
-                              <p>{{ article.content}}</p>
-                            </a>
-                            {% endfor %}
+                                     {% for article in blog.articles limit:3 %}
+                                          <a href="{{ article.url }}">
+                                            {{ article.image | image_url: width: master | image_tag }}
+                                            <div class="right"> <h3>{{ article.title }}</h3>
+                                            <p>{{ article.content}}</p> </div>
+                                           
+                                          </a>
+                                    {% endfor %}
                             
-                        {% endif %}  
+                              {% endif %}  
                       {% endfor %}
              </div>
 
