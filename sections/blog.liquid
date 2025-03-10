@@ -1,82 +1,132 @@
-<div class="page-width">
-    <div style="padding-top: {{ section.settings.range-top-setting }}px; padding-bottom: {{ section.settings.range-bottom-setting }}px">
-       
-        <div style="text-align: center;">
-            <h2 class="font" style="font-size: {{ section.settings.select-setting }}">
-                {{ section.settings.text-setting }}
-            </h2>
-        </div>
-
-        <div class="blog-collection">
-            {% for article in blogs[section.settings.blog-handle].articles %}
-                <div class="blog-post">
-                    {% if article.image %}
-                        <a href="{{ article.url }}">
-                            <img src="{{ article.image | image_url: width: 500 }}" alt="{{ article.title }}">
-                        </a>
-                    {% endif %}
-                    <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-                    <p>{{ article.excerpt | truncate: 100 }}</p>
-                    <a href="{{ article.url }}" class="read-more">Read More</a>
-                </div>
-            {% endfor %}
-        </div>
-
-    </div>
-</div>
-
 {% schema %}
 {
     "name": "Blog Section",
-    "class": "blog-cover",
     "settings": [
         {
             "type": "text",
-            "id": "text-setting",
-            "label": "Enter Section Title",
-            "default": "Latest Blog Posts"
+            "id": "section_title",
+            "label": "Section Title",
+            "default": "Read our blog"
         },
         {
             "type": "blog",
-            "id": "blog-handle",
+            "id": "blog",
             "label": "Select Blog"
-        },
-        {
-            "type": "range",
-            "id": "range-top-setting",
-            "min": 20,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "label": "Padding Top",
-            "default": 20
-        },
-        {
-            "type": "range",
-            "id": "range-bottom-setting",
-            "min": 20,
-            "max": 100,
-            "step": 1,
-            "unit": "px",
-            "label": "Padding Bottom",
-            "default": 20
-        },
-        {
-            "type": "select",
-            "id": "select-setting",
-            "label": "Select Font Size",
-            "options": [
-                { "value": "15px", "label": "Small" },
-                { "value": "25px", "label": "Medium" },
-                { "value": "35px", "label": "Large" },
-                { "value": "45px", "label": "Extra Large" }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "Blog Section"
         }
     ]
 }
 {% endschema %}
+
+<section class="blog-section">
+    <h2 class="blog-title">{{ section.settings.section_title }}</h2>
+    <div class="blog-container">
+        {% assign articles = section.settings.blog.articles %}
+        
+        {% if articles.size > 0 %}
+            <div class="blog-main">
+                {% assign main_article = articles.first %}
+                <div class="blog-main-image">
+                    <img src="{{ main_article.image | img_url: 'master' }}" alt="{{ main_article.title }}">
+                </div>
+                <div class="blog-main-content">
+                    <p class="blog-date">{{ main_article.published_at | date: "%d %b %Y" }}</p>
+                    <h3 class="blog-heading">{{ main_article.title }}</h3>
+                    <p class="blog-excerpt">{{ main_article.excerpt | truncatewords: 20 }}</p>
+                </div>
+            </div>
+            <div class="blog-list">
+                {% for article in articles limit: 3 offset: 1 %}
+                    <div class="blog-item">
+                        <div class="blog-thumb">
+                            <img src="{{ article.image | img_url: 'small' }}" alt="{{ article.title }}">
+                        </div>
+                        <div class="blog-info">
+                            <p class="blog-date">{{ article.published_at | date: "%d %b %Y" }}</p>
+                            <h4 class="blog-title">{{ article.title }}</h4>
+                            <p class="blog-excerpt">{{ article.excerpt | truncatewords: 15 }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No blog posts available.</p>
+        {% endif %}
+    </div>
+</section>
+
+<style>
+.blog-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.blog-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-main {
+    width: 60%;
+    text-align: left;
+}
+
+.blog-main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-list {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blog-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.blog-thumb img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.blog-info {
+    text-align: left;
+}
+
+.blog-date {
+    font-size: 12px;
+    color: #666;
+}
+
+.blog-heading, .blog-title {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.blog-excerpt {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+    }
+    .blog-main, .blog-list {
+        width: 100%;
+    }
+}
+</style>
