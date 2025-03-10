@@ -54,9 +54,9 @@
 }
 
 .product-collections {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
+  gap: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .product img {
   width: 100%;
