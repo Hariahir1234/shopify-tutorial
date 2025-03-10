@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .product-collections,
   .collection-title .top {
     flex-direction: column;
