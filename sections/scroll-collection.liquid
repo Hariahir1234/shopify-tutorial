@@ -1,8 +1,8 @@
 {% stylesheet %}
 
-
-.slick-prev, .slick-next {
-    font-size: 24px; /* Increase icon size */
+.scroll-collection .slick-prev, 
+.scroll-collection .slick-next {
+    font-size: 24px; /* Adjust icon size */
     color: #333; /* Arrow color */
     position: absolute;
     top: 50%;
@@ -10,42 +10,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Adjust width */
-    height: 40px; /* Adjust height */
-    border-radius: 50%; /* Make circular */
+    width: 40px; /* Circular size */
+    height: 40px;
+    border-radius: 50%; /* Rounded */
     background: transparent;
     border: 1px solid #999; /* Light border */
     transition: all 0.3s ease;
 }
 
-.slick-prev:hover, .slick-next:hover {
+.scroll-collection .slick-prev:hover, 
+.scroll-collection .slick-next:hover {
     background: #333; /* Dark background on hover */
     color: #fff; /* White arrow */
     border-color: #333;
 }
 
 /* Positioning */
-.slick-prev {
+.scroll-collection .slick-prev {
     left: -50px; /* Adjust left arrow position */
 }
 
-.slick-next {
+.scroll-collection .slick-next {
     right: -50px; /* Adjust right arrow position */
 }
 
-/* Add arrow content */
-.slick-prev::before, .slick-next::before {
+/* Arrow Icons */
+.scroll-collection .slick-prev::before, 
+.scroll-collection .slick-next::before {
     font-family: 'Font Awesome 5 Free'; /* If using FontAwesome */
     font-weight: 900;
 }
 
-.slick-prev::before {
+.scroll-collection .slick-prev::before {
     content: "\f104"; /* Left arrow */
 }
 
-.slick-next::before {
+.scroll-collection .slick-next::before {
     content: "\f105"; /* Right arrow */
 }
+
 
 
 .best-seller-tag {
