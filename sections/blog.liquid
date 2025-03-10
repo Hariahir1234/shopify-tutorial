@@ -24,8 +24,8 @@
           </div>
            <div class="secondary-blog">
                  {% for article in section.settings.blog-setting.articles limit:3 %}
-                        {{ firstarticle.image | image_url: width: master | image_tag  }}
-                        {{ firstarticle.title }} 
+                        {{ article.image | image_url: width: master | image_tag  }}
+                        {{ article.title }} 
                   {% endfor %}
            </div>
           
