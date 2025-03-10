@@ -83,10 +83,10 @@
         }
     ],
     "blocks": [
-        {
-          "name":"Main Block",
-          "type": "main_block",
-          "settings": [
+            {
+              "name":"Main Block",
+              "type": "main_block",
+              "settings": [
 
               {
                 "type": "image_picker",
@@ -110,10 +110,38 @@
                 "label": "Contain Text",
                 
               },
-            ]
-        }
-      ],
-      
+            
+                ]
+            },
+             {
+                "name":"Side Block",
+                "type": "side_block",
+              "settings": [
+
+                      {
+                        "type": "image_picker",
+                        "id": "side-image-picker-setting",
+                        "label": "Select Image"
+                      },
+        
+                      {
+                        "type": "text",
+                        "id": "side-first-text-setting",
+                        "label": "First Tex"
+                      },
+                        {
+                      "type": "text",
+                      "id": "side-main-text-setting",
+                      "label": "Main Tex"
+                    },
+                      {
+                      "type": "textarea",
+                       "id": "side-textarea-setting",
+                      "label": "Contain Text",
+                      
+                    },
+            ]},
+    ],
 
     "presets": [
         {
