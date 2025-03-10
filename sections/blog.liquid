@@ -13,15 +13,16 @@
             {% assign blog = blogs[block.settings.blog-setting] %}
 
               {% if blog == 'main' %}
-                
-              {% endif %}  
-              {% for article in blog.articles  %}
-                <a href="{{ article.url }}">
+                 {% for article in blog.articles  %}
+                    <a href="{{ article.url }}">
                       {{ article.image | image_url: width: master | image_tag }}
                       <h3>{{ article.title }}</h3>
                       <p>{{ article.content}}</p>
-                  </a>
-              {% endfor %}
+                    </a>
+                {% endfor %}
+                
+              {% endif %}  
+             
           {% endfor %}
       </div>
 
