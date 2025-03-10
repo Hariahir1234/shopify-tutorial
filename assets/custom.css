@@ -153,9 +153,8 @@
   gap: 30px;
   grid-template-columns: 1fr 1fr;
 }
-
 .secondary-blog img {
-  width: 30%;
+  width: 42%;
   height: fit-content;
 }
 .blog-box {
