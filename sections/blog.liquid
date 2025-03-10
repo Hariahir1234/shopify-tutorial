@@ -13,8 +13,8 @@
         <div class="blog-section"> 
 
           {% for article in section.settings.blog-setting.articles %}
-                {{ article.first }}
-          {% endfor %}
+               
+        
 
           <div class="main-blog">
             {% assign firstarticle = section.settings.article-setting.first %}
@@ -23,7 +23,7 @@
              
           </div>
            <div class="secondary-blog"> </div>
-          
+            {% endfor %}
         </div>
 
       
