@@ -161,7 +161,8 @@
 .blog-box {
   display: flex;
   gap: 30px;
-  .top h2 {
-    margin: 0;
-  }
+}
+
+.blog-box .top h2 {
+  margin: 0;
 }
