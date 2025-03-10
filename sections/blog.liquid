@@ -11,7 +11,7 @@
 
 
         <div class="blog-section"> 
-          {% for article in section.blocks %}
+          {% for block in section.blocks %}
                  {{ article.image | image_url: width: master | image_tag  }}
                  {{ article.title }} 
                   {{ article.content }} 
