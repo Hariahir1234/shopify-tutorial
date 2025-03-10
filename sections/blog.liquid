@@ -14,17 +14,31 @@
 
               <div class="main-blog">  
 
-              {% if blog.title == 'Main Blog' %}
-                 {% for article in blog.articles  %}
-                    <a href="{{ article.url }}">
-                      {{ article.image | image_url: width: master | image_tag }}
-                      <h3>{{ article.title }}</h3>
-                      <p>{{ article.content}}</p>
-                    </a>
-                {% endfor %}
-                
-              {% endif %}  
+                    {% if blog.title == 'Main Blog' %}
+                       {% for article in blog.articles  %}
+                          <a href="{{ article.url }}">
+                            {{ article.image | image_url: width: master | image_tag }}
+                            <h3>{{ article.title }}</h3>
+                            <p>{{ article.content}}</p>
+                          </a>
+                          {% endfor %}
+                      
+                    {% endif %}  
               </div>
+                   <div class="side-bar">  
+
+                    {% if blog.title == 'Main Blog' %}
+                       {% for article in blog.articles  %}
+                          <a href="{{ article.url }}">
+                            {{ article.image | image_url: width: master | image_tag }}
+                            <h3>{{ article.title }}</h3>
+                            <p>{{ article.content}}</p>
+                          </a>
+                          {% endfor %}
+                      
+                    {% endif %}  
+              </div>
+          
              
           {% endfor %}
       </div>
