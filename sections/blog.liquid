@@ -1,4 +1,3 @@
-
 <div class="page-width">
     <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
        
@@ -6,33 +5,33 @@
             <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
                 {{ section.settings.text-setting }}
             </h2>
-          
         </div>
-
 
         <div class="blog-section"> 
+            {% for block in section.blocks %}
+                {% assign blog = blogs[block.settings.blog-setting] %}
+                {% if blog.articles.size > 0 %}
+                    <div class="primary-blog">
+                        {% assign first_article = blog.articles.first %}
+                        <img src="{{ first_article.image | image_url: width: master }}" alt="{{ first_article.title }}">
+                        <p>Name . {{ first_article.published_at | date: "%d %b %Y" }}</p>
+                        <h3>{{ first_article.title }}</h3>
+                        <p>{{ first_article.excerpt_or_content | truncatewords: 30 }}</p>
+                    </div>
 
-        
-               
-        
-
-     
-           <div class="secondary-blog">
-                 {% for blog in section.blocks.article %}
-
-                     {{ blog.image | image_url:width: master | image_tag}}
-                        
-           
-                  {% endfor %}
-           </div>
-          
+                    <div class="secondary-blog">
+                        {% for article in blog.articles offset:1 limit:3 %}
+                            <div class="blog-item">
+                                <img src="{{ article.image | image_url: width: master }}" alt="{{ article.title }}">
+                                <p>Name . {{ article.published_at | date: "%d %b %Y" }}</p>
+                                <h3>{{ article.title }}</h3>
+                                <p>{{ article.excerpt_or_content | truncatewords: 15 }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
-
-      
-    
-     
-
-      
     </div>
 </div>
 
@@ -41,9 +40,6 @@
     "name": "Blog",
     "class": "blog-cover",
     "settings": [
-
-      
-      
         {
             "type": "text",
             "id": "text-setting",
@@ -67,7 +63,7 @@
             "max": 100,
             "step": 1,
             "unit": "px",
-            "label": "Padding-Bottom",
+            "label": "Padding Bottom",
             "default": 20
         },
         {
@@ -91,32 +87,27 @@
                     "value": "45px",
                     "label": "extra large"
                 }
-            ]
-        },
-        
+            ],
+            "default": "25px"
+        }
     ],
     "blocks": [
         { 
-          "name":"custom block",
-          "type": "custom-block",
-          "settings": [
-            { 
-                "type":"blog",
-                "id":"blog-setting",
-                "label": "Select Blog"
-              }
-          ]
+            "name": "Custom Blog",
+            "type": "custom-blog",
+            "settings": [
+                { 
+                    "type": "blog",
+                    "id": "blog-setting",
+                    "label": "Select Blog"
+                }
+            ]
         }
     ],
-   
-
     "presets": [
-      {
-        "name": "Blog"
-      }
-        ]
-
-        
+        {
+            "name": "Blog"
+        }
+    ]
 }
 {% endschema %}
-
