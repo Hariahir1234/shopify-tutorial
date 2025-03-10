@@ -27,7 +27,7 @@
                  {% for article in section.settings.blog-setting.articles limit:3 %}
                         {{ article.image | image_url: width: master | image_tag  }}
                         {{ article.title }} 
-                     {{ article.content }} 
+                        {{ article.content }} 
                   {% endfor %}
            </div>
           
