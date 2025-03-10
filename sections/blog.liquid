@@ -1,0 +1,173 @@
+
+<div class="page-width">
+    <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
+       
+        <div style="text-align:center">
+            <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
+                {{ section.settings.text-setting }}
+            </h2>
+            <div class="line"> </div>  
+        </div>
+
+    
+        <div class="testimonial-collection">
+            {% if section.blocks %}
+                {% for block in section.blocks %}
+                    <div class="product" style="text-align:center;margin-bottom: 10px;">
+                        <p>{{ block.settings.textarea-setting }}</p>  
+                        <strong>{{ block.settings.name-text-setting }}</strong>  
+                         <div>{{ block.settings.position-text-setting }}</div>  
+                    </div>
+                {% endfor %}
+            {% endif %} 
+        </div>
+
+      
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Testimonials",
+    "class": "testimonial-cover",
+    "settings": [
+       
+        {
+            "type": "text",
+            "id": "text-setting",
+            "label": "Enter Text",
+            "default": "Collection"
+        },
+        {
+            "type": "range",
+            "id": "range-top-setting",
+            "min": 20,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Top",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "range-bottom-setting",
+            "min": 20,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding-Bottom",
+            "default": 20
+        },
+        {
+            "type": "select",
+            "id": "select-setting",
+            "label": "Select Font Size",
+            "options": [
+                {
+                    "value": "15px",
+                    "label": "small"
+                },
+                {
+                    "value": "25px",
+                    "label": "medium"
+                },
+                {
+                    "value": "35px",
+                    "label": "large"
+                },
+                {
+                    "value": "45px",
+                    "label": "extra large"
+                }
+            ]
+        }
+    ],
+    "blocks": [
+        {
+          "name":"custom block",
+          "type": "custom_black",
+          "settings": [
+
+              {
+                "type": "textarea",
+                 "id": "textarea-setting",
+                "label": "Testimonial Text",
+                
+              },
+              {
+                "type": "text",
+                "id": "name-text-setting",
+                "label": "Name Enter"
+              },
+              {
+                "type": "text",
+                "id": "position-text-setting",
+                "label": "Postion Text"
+              }
+            ]
+        }
+      ],
+      
+
+    "presets": [
+        {
+            "name": "Testimonials"
+        }
+    ]
+}
+{% endschema %}
+
+<script>
+$(document).ready(function() {
+     var backButton = `<button class="slick-prev">
+        <img src="{{ 'slick-back.svg' | asset_url }}" alt="Back">
+    </button>`;
+    var nextButton = `<button class="slick-next">
+        <img src="{{ 'slick-next.svg' | asset_url }}" alt="Next">
+    </button>`;
+    var $slider = $('.testimonial-collection');
+        $slider.slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+           prevArrow: backButton,
+        nextArrow: nextButton,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.scroll-left').click(function() {
+        $slider.slick('slickPrev');
+    });
+
+    $('.scroll-right').click(function() {
+        $slider.slick('slickNext');
+    });
+});
+</script>
