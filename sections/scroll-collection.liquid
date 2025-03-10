@@ -5,8 +5,8 @@
 }
 
 .slick-next:before {
-    content: ''; /* Remove default text */
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>');
+    content: '';
+    background-image: url('{{ "next-arrow.svg" | asset_url }}');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
@@ -16,18 +16,7 @@
 
 .slick-prev:before {
     content: '';
-    background-image: url('
-<svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1779_880)">
-<path d="M1.64157 -0.000635887C2.08067 0.144971 2.39228 0.450744 2.7039 0.785638C6.62741 4.81892 10.5509 8.8522 14.4744 12.8855C15.0268 13.4533 15.1402 14.1086 14.8002 14.7201C14.7294 14.8512 14.6302 14.9676 14.5169 15.0841C10.4943 19.2193 6.45744 23.3545 2.42061 27.5043C2.00985 27.9266 1.5141 28.1158 0.947526 27.9266C0.423447 27.7518 0.111831 27.3587 0.0126809 26.8054C-0.0581409 26.3686 0.0693386 25.99 0.33846 25.6697C0.409282 25.5823 0.494267 25.4949 0.579253 25.4076C4.20532 21.6801 7.81721 17.9671 11.4433 14.2396C11.5141 14.1668 11.6132 14.1086 11.7124 14.0503C11.7124 14.0066 11.7124 13.963 11.7124 13.9338C11.6274 13.8756 11.5283 13.8174 11.4574 13.7446C7.81721 10.0025 4.16282 6.26042 0.522594 2.51835C-0.0298132 1.95048 -0.143129 1.26614 0.225143 0.669153C0.437607 0.319698 0.763387 0.144971 1.13166 -0.000635843C1.28747 -0.000635856 1.4716 -0.000635872 1.64157 -0.000635887Z" fill="black" fill-opacity="0.7"/>
-</g>
-<defs>
-<clipPath id="clip0_1779_880">
-<rect width="15" height="28" fill="white" transform="translate(15 28) rotate(180)"/>
-</clipPath>
-</defs>
-</svg>
-');
+    background-image: url('{{ "prev-arrow.svg" | asset_url }}');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
