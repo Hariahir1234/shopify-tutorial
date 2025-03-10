@@ -160,8 +160,8 @@
 .blog-box {
   display: flex;
   gap: 30px;
+  margin-bottom: 45px;
 }
-
 .blog-box .top h2 {
   margin: 0;
 }
