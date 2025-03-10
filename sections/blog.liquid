@@ -17,7 +17,9 @@
             {% if block.settings.image-picker-setting %}
               {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
              {% else %} 
-                 {{ 'https://cdn.shopify.com/s/files/1/0669/8375/5820/files/main-blog.jpg?v=1741595640'  | image_url: width: master | image_tag  }}
+
+              <img src="{{ 'https://cdn.shopify.com/s/files/1/0669/8375/5820/files/main-blog.jpg?v=1741595640' | asset_url }}" />
+                   {{ 'https://cdn.shopify.com/s/files/1/0669/8375/5820/files/main-blog.jpg?v=1741595640'  | image_url: width: master | image_tag  }}
              
             {% endif %}
             
