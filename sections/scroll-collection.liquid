@@ -99,7 +99,7 @@
                 {% for product in section.settings.collection-setting.products %}
                     <div class="product">
                         <a href="{{ product.url }}">
-                          {% if product.metafields.custom.best_seller == 'true' %}
+                        {% if product.metafields.custom.best_seller == true %}
                             <div class="best-seller-tag"> Best Seller </div>
                           {% endif %}
                             {{ product.featured_image | image_url: width: master | image_tag  }}
