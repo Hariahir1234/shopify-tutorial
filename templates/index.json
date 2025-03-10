@@ -147,10 +147,10 @@
       "type": "blog",
       "settings": {
         "blog-setting": "main-blog",
-        "text-setting": "Blog",
-        "range-top-setting": 20,
-        "range-bottom-setting": 20,
-        "select-setting": "15px"
+        "text-setting": "Read our blog",
+        "range-top-setting": 25,
+        "range-bottom-setting": 60,
+        "select-setting": "45px"
       }
     }
   },
