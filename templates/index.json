@@ -73,14 +73,16 @@
         "collection-setting": "scroll-collection",
         "text-setting": "Most Selled Product",
         "range-top-setting": 20,
-        "range-bottom-setting": 100,
+        "range-bottom-setting": 33,
         "select-setting": "45px"
       }
     },
     "merquee_kbtRPK": {
       "type": "merquee",
       "settings": {
-        "text-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy Lorem Ipsum has been the industry's stand....."
+        "text-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy Lorem Ipsum has been the industry's stand.....",
+        "range-top-setting": 30,
+        "range-bottom-setting": 20
       }
     },
     "testimonials_7cMmpB": {
