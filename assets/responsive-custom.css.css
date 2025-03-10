@@ -51,5 +51,7 @@
 }
 
 @media screen and (min-device-width: 769px) and (max-device-width: 1172px) {
-  /* STYLES HERE */
+  .collection-title.scroll-collection .top {
+    width: 70%;
+  }
 }
