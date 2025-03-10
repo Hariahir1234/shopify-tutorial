@@ -1,3 +1,4 @@
+
 <div class="page-width">
     <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
        
@@ -5,26 +6,18 @@
             <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
                 {{ section.settings.text-setting }}
             </h2>
+          
         </div>
 
-        <div class="blog-section"> 
-            {% for block in section.blocks %}
-                {% if block.type == "custom-block" %}
-                    {% assign article = block.settings.blog-setting %}
-                    {% if article != blank %}
-                        <div class="blog-item">
-                            <img src="{{ article.image | image_url: width: 500 }}" alt="{{ article.title }}">
-                            <h3>{{ article.title }}</h3>
-                            <p>{{ article.content | strip_html | truncate: 150 }}</p>
-                        </div>
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        </div>
 
+        {% for block in section.blocks %}
+        
+      
+      {%  endfor %}
+
+      
     </div>
 </div>
-
 
 {% schema %}
 {
