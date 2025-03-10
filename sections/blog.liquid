@@ -17,7 +17,7 @@ he
             {% if block.settings.image-picker-setting %}
               {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
              {% else %} 
-                     {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
+              {{ 'main-blog.jpg' | image_url: width: master | image_tag  }}
             {% endif %}
             
            
