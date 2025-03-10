@@ -10,17 +10,16 @@
 <div class="page-width">
     <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
        
-            <div style="text-align:center">
+        <div style="text-align:center">
+            <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
+                {{ section.settings.text-setting }}
+            </h2>
+            <div class="line"> </div>  
+        </div>
 
-                    <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
-                        {{ section.settings.text-setting }}
-                    </h2>
-                    <div class="line"> </div>  
-                  
-           
-            </div>
-      
-
+        <!-- Left Button -->
+        <button class="scroll-left">❮</button>
+        
         <div class="testimonial-collection">
             {% if section.blocks %}
                 {% for block in section.blocks %}
@@ -32,6 +31,10 @@
                 {% endfor %}
             {% endif %} 
         </div>
+
+        <!-- Right Button -->
+        <button class="scroll-right">❯</button>
+        
     </div>
 </div>
 
