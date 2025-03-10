@@ -12,9 +12,8 @@
   }
 
   .banner__text p {
-    font-size: 10px;
+    font-size: 17px !important;
   }
-
   .collection-title,
   .collection-title.scroll-collection {
     width: 100%;
