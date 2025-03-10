@@ -36,7 +36,8 @@
                  {% for article in section.settings.blog-setting.articles limit:3 %}
                         <div class="blog-box">
                         {{ article.image | image_url: width: master | image_tag  }}
-                          <div class="top"><strong>{{ article.created_at | date: "%d %b %Y" }}</strong>
+                          <div class="top"> </div>
+                           <strong>{{ article.created_at | date: "%d %b %Y" }}</strong>
                            <h2> 
                            {{ article.title }} 
             
@@ -45,8 +46,7 @@
                           <p>
              
                          {{ article.content }} 
-                          </p> </div>
-                           
+                          </p>
                         </div>   
                         
            
