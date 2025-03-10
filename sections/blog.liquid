@@ -20,11 +20,15 @@
             {% assign firstarticle = section.settings.blog-setting.articles.first %}
              {{ firstarticle.image | image_url: width: master | image_tag  }}
              <h4> 
- {{ firstarticle.title }} 
+               {{ firstarticle.title }} 
 
             </h4>
-            
+
+              <p>
+ 
              {{ firstarticle.content }} 
+              </p>
+           
              
           </div>
            <div class="secondary-blog">
