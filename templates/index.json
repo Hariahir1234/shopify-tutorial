@@ -142,33 +142,6 @@
         "range-bottom-setting": 60,
         "select-setting": "45px"
       }
-    },
-    "blog_Fwc3VQ": {
-      "type": "blog",
-      "settings": {
-        "text-setting": "Latest Blog Posts",
-        "blog-handle": "news",
-        "range-top-setting": 20,
-        "range-bottom-setting": 20,
-        "select-setting": "45px"
-      }
-    },
-    "featured_blog_DLNDDi": {
-      "type": "featured-blog",
-      "settings": {
-        "blog": "main-blog",
-        "post_limit": 3,
-        "heading": "",
-        "heading_size": "h0",
-        "columns_desktop": 2,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -176,8 +149,6 @@
     "custom_collection_gtkwcy",
     "scroll_collection_43MJVw",
     "merquee_kbtRPK",
-    "testimonials_7cMmpB",
-    "blog_Fwc3VQ",
-    "featured_blog_DLNDDi"
+    "testimonials_7cMmpB"
   ]
 }
