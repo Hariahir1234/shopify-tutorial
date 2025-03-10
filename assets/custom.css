@@ -153,15 +153,7 @@
   gap: 30px;
   grid-template-columns: 1fr 1fr;
 }
-.secondary-blog img {
-  width: 42%;
-  height: fit-content;
-}
-.blog-box {
+.side-blog a {
   display: flex;
-  gap: 30px;
-  margin-bottom: 45px;
-}
-.blog-box .top h2 {
-  margin: 0;
+  margin-bottom: 42px;
 }
