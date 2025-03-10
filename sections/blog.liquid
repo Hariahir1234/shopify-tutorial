@@ -12,8 +12,8 @@
 
         <div class="blog-section"> 
 
-          {% for blog in section.settings.blog-setting.articles %}
-                
+          {% for article in section.settings.blog-setting.articles %}
+                {{ article.first }}
           {% endfor %}
 
           <div class="main-blog">
