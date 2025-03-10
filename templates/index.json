@@ -43,7 +43,6 @@
         "heading",
         "button"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/craft-banner.png",
         "image_overlay_opacity": 0,
@@ -60,6 +59,7 @@
     },
     "custom_collection_gtkwcy": {
       "type": "custom-collection",
+      "disabled": true,
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Collection",
@@ -70,6 +70,7 @@
     },
     "scroll_collection_43MJVw": {
       "type": "scroll-collection",
+      "disabled": true,
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Most Selled Product",
