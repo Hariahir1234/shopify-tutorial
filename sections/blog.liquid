@@ -17,7 +17,8 @@
             {% if block.settings.image-picker-setting %}
               {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
              {% else %} 
-              {{ 'main-blog.jpg' | asset_url  }}
+                <img src="{{ 'ain-blog.jpg' | asset_url }}" alt="Default Image">
+             
             {% endif %}
             
            
