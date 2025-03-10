@@ -145,6 +145,38 @@
     },
     "blog_dM9KzH": {
       "type": "blog",
+      "blocks": {
+        "custom_block_bHdDFa": {
+          "type": "custom-block",
+          "settings": {
+            "blog-setting": "main-blog"
+          }
+        },
+        "custom_block_wqhcmi": {
+          "type": "custom-block",
+          "settings": {
+            "blog-setting": "side-blog"
+          }
+        },
+        "custom_block_YzWeGF": {
+          "type": "custom-block",
+          "settings": {
+            "blog-setting": "side-blog"
+          }
+        },
+        "custom_block_YNEBWj": {
+          "type": "custom-block",
+          "settings": {
+            "blog-setting": "side-blog"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_bHdDFa",
+        "custom_block_wqhcmi",
+        "custom_block_YzWeGF",
+        "custom_block_YNEBWj"
+      ],
       "settings": {
         "text-setting": "Read our blog",
         "range-top-setting": 20,
