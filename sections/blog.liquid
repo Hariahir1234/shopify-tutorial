@@ -1,4 +1,4 @@
-
+he
 <div class="page-width">
     <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
        
@@ -14,7 +14,7 @@
 
           {% for block in section.blocks %}
 
-            {{ block.settings.image-picker-setting }}
+            {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
             {{ block.settings.first-text-setting }}
             
           {% endfor %}
