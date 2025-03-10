@@ -24,8 +24,9 @@
           </div>
            <div class="secondary-blog">
                  {% for article in section.settings.blog-setting.articles %}
-
-                     {% endfor %}
+                        {{ firstarticle.image | image_url: width: master | image_tag  }}
+             {{ firstarticle.title }} 
+                  {% endfor %}
            </div>
           
         </div>
