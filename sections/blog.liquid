@@ -15,10 +15,12 @@ he
           {% for block in section.blocks %}
 
             {% if block.settings.image-picker-setting %}
-
-              {% endif %}
+              {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
+             {% else %} 
+                     {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
+            {% endif %}
             
-            {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
+           
             {{ block.settings.first-text-setting }}
             
           {% endfor %}
