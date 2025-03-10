@@ -11,9 +11,9 @@
 
 
         <div class="blog-section"> 
-          {% for block in section.blocks.settings.blog-setting.article %}
+          {% for block in section.blocks %}
 
-            
+            block.settings.blog-setting
             
                    {{ image | image_url: width: master | image_tag  }}
                  
