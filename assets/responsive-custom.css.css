@@ -4,6 +4,10 @@
     flex-direction: column;
   }
 
+  .product-collections {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .collection-title.scroll-collection .top {
     width: 100%;
     text-align: center;
