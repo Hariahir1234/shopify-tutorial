@@ -8,24 +8,20 @@
             </h2>
         </div>
 
-        <div class="blog-section">
-            {% for block in section.blocks %}
-                {% assign blog = blogs[block.settings.blog-setting] %}
-                
-                {% if blog.articles != blank %}
-                    {% for article in blog.articles limit: 3 %} 
-                        <div class="blog-item">
-                            <img src="{{ article.image | image_url: width: 500 }}" alt="{{ article.title }}">
-                            <h3>{{ article.title }}</h3>
-                            <p>{{ article.content | strip_html | truncate: 150 }}</p>
-                            <a href="{{ article.url }}">Read More</a>
-                        </div>
-                    {% endfor %}
-                {% else %}
-                    <p>No articles found.</p>
-                {% endif %}
+       <div class="blog-section">
+        {% for block in section.blocks %}
+            {% assign blog = blogs[block.settings.blog-setting] %}
+            
+            {% for article in blog.articles limit:3 %}
+                <div>
+                    {{ article.image | image_url: width: 500 | image_tag }}
+                    <h3>{{ article.title }}</h3>
+                    <p>{{ article.content | strip_html | truncate: 100 }}</p>
+                    <a href="{{ article.url }}">Read More</a>
+                </div>
             {% endfor %}
-        </div>
+        {% endfor %}
+    </div>
 
     </div>
 </div>
