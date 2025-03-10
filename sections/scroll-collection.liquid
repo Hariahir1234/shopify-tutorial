@@ -4,14 +4,26 @@
     font-family: inherit !important;
 }
 
-  .slick-next:before {
-    content: '>' !important;
+.slick-next:before {
+    content: ''; /* Remove default text */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
 }
 
 .slick-prev:before {
-    content: '<' !important;
+    content: '';
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 5l-8 7 8 7z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
 }
-  
+
 
 .best-seller-tag {
     position: absolute;
