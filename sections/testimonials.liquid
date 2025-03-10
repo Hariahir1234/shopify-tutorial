@@ -49,9 +49,7 @@
             <div class="line"> </div>  
         </div>
 
-    <img src="{{ 'slick-next.svg' | asset_url }}" alt="Next Arrow">
-<img src="{{ 'slick-back.svg' | asset_url }}" alt="Back Arrow">
-
+    
         <div class="testimonial-collection">
             {% if section.blocks %}
                 {% for block in section.blocks %}
@@ -161,6 +159,12 @@
 
 <script>
 $(document).ready(function() {
+     var backButton = `<button class="slick-prev">
+        <img src="{{ 'slick-back.svg' | asset_url }}" alt="Back">
+    </button>`;
+    var nextButton = `<button class="slick-next">
+        <img src="{{ 'slick-next.svg' | asset_url }}" alt="Next">
+    </button>`;
     var $slider = $('.testimonial-collection');
         $slider.slick({
         autoplay: true,
