@@ -15,4 +15,8 @@
     display: flex;
     justify-content: center;
   }
+
+  .scroll-button {
+    justify-content: center;
+  }
 }
