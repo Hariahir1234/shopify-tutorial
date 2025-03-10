@@ -9,25 +9,25 @@
         </div>
 
        <div class="blog-section">
-        {% for block in section.blocks %}
-            {% assign blog = blogs[block.settings.blog-setting] %}
-
-              <div class="main-blog">  
-
-                    {% if blog.title == 'Main Blog'%}
-                       {% for article in blog.articles limit:1 %}
-                          <a href="{{ article.url }}">
-                            {{ article.image | image_url: width: master | image_tag }}
-                            <h3>{{ article.title }}</h3>
-                            <p>{{ article.content}}</p>
-                          </a>
-                          {% endfor %}
-                      
-                    {% endif %}  
-                  </div>
-                   <div class="side-blog">  
-
-                      {% if blog.title == 'Side Blog' %}
+                 <div class="main-blog">  
+                      {% for block in section.blocks %}
+                          {% assign blog = blogs[block.settings.blog-setting] %}
+                                {% if blog.title == 'Main Blog'%}
+                                   {% for article in blog.articles limit:1 %}
+                                      <a href="{{ article.url }}">
+                                        {{ article.image | image_url: width: master | image_tag }}
+                                        <h3>{{ article.title }}</h3>
+                                        <p>{{ article.content}}</p>
+                                      </a>
+                                      {% endfor %}
+                                  
+                                {% endif %}  
+                      {% endfor %}
+                </div>
+             <div class="side-blog">
+                 {% for block in section.blocks %}
+                          {% assign blog = blogs[block.settings.blog-setting] %}
+                               {% if blog.title == 'Side Blog' %}
                          {% for article in blog.articles limit:3 %}
                             <a href="{{ article.url }}">
                               {{ article.image | image_url: width: master | image_tag }}
@@ -37,15 +37,14 @@
                             {% endfor %}
                             
                         {% endif %}  
-              </div>
-          
-             
-          {% endfor %}
+                      {% endfor %}
+             </div>
+
       </div>
+  </div>
 
-    </div>
-</div>
-
+  
+         
 
 {% schema %}
 {
