@@ -12,8 +12,9 @@
 
         <div class="blog-section"> 
           {% for article in section.blocks.article %}
-                 {{ blog.image | image_url: width: master | image_tag  }}
-                 {{ blog.titl }} 
+                 {{ article.image | image_url: width: master | image_tag  }}
+                 {{ article.title }} 
+                  {{ article.content }} 
           {% endfor %}
 
         </div>
