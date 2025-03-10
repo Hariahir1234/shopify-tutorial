@@ -1,132 +1,165 @@
+
+<div class="page-width">
+    <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
+       
+        <div style="text-align:center">
+            <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
+                {{ section.settings.text-setting }}
+            </h2>
+          
+        </div>
+
+    
+        <div class="blog-collection">
+
+          {% for block in section.blocks %}
+
+            {% if block.settings.image-picker-setting %}
+              {{ block.settings.image-picker-setting | image_url: width: master | image_tag  }}
+             {% else %} 
+
+              <img src="https://cdn.shopify.com/s/files/1/0669/8375/5820/files/main-blog.jpg?v=1741595640"  alt="">
+             
+            {% endif %}
+            
+           
+            {{ block.settings.first-text-setting }}
+            
+          {% endfor %}
+          
+           
+          
+          
+        </div>
+
+      
+    </div>
+</div>
+
 {% schema %}
 {
-    "name": "Blog Section",
+    "name": "Blog",
+    "class": "blog-cover",
     "settings": [
+       
         {
             "type": "text",
-            "id": "section_title",
-            "label": "Section Title",
-            "default": "Read our blog"
+            "id": "text-setting",
+            "label": "Enter Text",
+            "default": "Blog"
         },
         {
-            "type": "blog",
-            "id": "blog",
-            "label": "Select Blog"
+            "type": "range",
+            "id": "range-top-setting",
+            "min": 20,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Top",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "range-bottom-setting",
+            "min": 20,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding-Bottom",
+            "default": 20
+        },
+        {
+            "type": "select",
+            "id": "select-setting",
+            "label": "Select Font Size",
+            "options": [
+                {
+                    "value": "15px",
+                    "label": "small"
+                },
+                {
+                    "value": "25px",
+                    "label": "medium"
+                },
+                {
+                    "value": "35px",
+                    "label": "large"
+                },
+                {
+                    "value": "45px",
+                    "label": "extra large"
+                }
+            ]
         }
-    ]
+    ],
+    "blocks": [
+            {
+              "name":"blog",
+              "type": "main_block",
+              "settings": [
+
+              {
+                "type": "image_picker",
+                "id": "image-picker-setting",
+                "label": "Select Image"
+                
+              },
+
+              {
+                "type": "text",
+                "id": "first-text-setting",
+                "label": "First Tex"
+              },
+                  {
+                "type": "text",
+                "id": "main-text-setting",
+                "label": "Main Tex"
+              },
+                {
+                "type": "textarea",
+                 "id": "textarea-setting",
+                "label": "Contain Text",
+                
+              },
+            
+                ]
+            },
+             {
+                "name":"Side Block",
+                "type": "side_block",
+                "settings": [
+
+                      {
+                        "type": "image_picker",
+                        "id": "side-image-picker-setting",
+                        "label": "Select Image"
+                      },
+        
+                      {
+                        "type": "text",
+                        "id": "side-first-text-setting",
+                        "label": "First Tex"
+                      },
+                        {
+                      "type": "text",
+                      "id": "side-main-text-setting",
+                      "label": "Main Tex"
+                    },
+                      {
+                      "type": "textarea",
+                       "id": "side-textarea-setting",
+                      "label": "Contain Text",
+                      
+                    },
+                      ]},
+                    ],
+    "presets": [
+      {
+        "name": "Blog"
+      }
+        ]
+
+        
 }
 {% endschema %}
 
-<section class="blog-section">
-    <h2 class="blog-title">{{ section.settings.section_title }}</h2>
-    <div class="blog-container">
-        {% assign articles = section.settings.blog.articles %}
-        
-        {% if articles.size > 0 %}
-            <div class="blog-main">
-                {% assign main_article = articles.first %}
-                <div class="blog-main-image">
-                    <img src="{{ main_article.image | img_url: 'master' }}" alt="{{ main_article.title }}">
-                </div>
-                <div class="blog-main-content">
-                    <p class="blog-date">{{ main_article.published_at | date: "%d %b %Y" }}</p>
-                    <h3 class="blog-heading">{{ main_article.title }}</h3>
-                    <p class="blog-excerpt">{{ main_article.excerpt | truncatewords: 20 }}</p>
-                </div>
-            </div>
-            <div class="blog-list">
-                {% for article in articles limit: 3 offset: 1 %}
-                    <div class="blog-item">
-                        <div class="blog-thumb">
-                            <img src="{{ article.image | img_url: 'small' }}" alt="{{ article.title }}">
-                        </div>
-                        <div class="blog-info">
-                            <p class="blog-date">{{ article.published_at | date: "%d %b %Y" }}</p>
-                            <h4 class="blog-title">{{ article.title }}</h4>
-                            <p class="blog-excerpt">{{ article.excerpt | truncatewords: 15 }}</p>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        {% else %}
-            <p>No blog posts available.</p>
-        {% endif %}
-    </div>
-</section>
-
-<style>
-.blog-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.blog-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.blog-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.blog-main {
-    width: 60%;
-    text-align: left;
-}
-
-.blog-main img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.blog-list {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.blog-item {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.blog-thumb img {
-    width: 80px;
-    height: 80px;
-    border-radius: 5px;
-}
-
-.blog-info {
-    text-align: left;
-}
-
-.blog-date {
-    font-size: 12px;
-    color: #666;
-}
-
-.blog-heading, .blog-title {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-.blog-excerpt {
-    font-size: 14px;
-    color: #666;
-}
-
-@media (max-width: 768px) {
-    .blog-container {
-        flex-direction: column;
-    }
-    .blog-main, .blog-list {
-        width: 100%;
-    }
-}
-</style>
