@@ -142,6 +142,15 @@
         "range-bottom-setting": 60,
         "select-setting": "45px"
       }
+    },
+    "blog_xi4wqt": {
+      "type": "blog",
+      "settings": {
+        "text-setting": "Read our blog",
+        "range-top-setting": 20,
+        "range-bottom-setting": 20,
+        "select-setting": "45px"
+      }
     }
   },
   "order": [
@@ -149,6 +158,7 @@
     "custom_collection_gtkwcy",
     "scroll_collection_43MJVw",
     "merquee_kbtRPK",
-    "testimonials_7cMmpB"
+    "testimonials_7cMmpB",
+    "blog_xi4wqt"
   ]
 }
