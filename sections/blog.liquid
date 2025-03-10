@@ -20,11 +20,11 @@
             {% assign firstarticle = section.settings.blog-setting.articles.first %}
              {{ firstarticle.image | image_url: width: master | image_tag  }}
               <strong>{{ firstarticle.created_at | date: "%d %b %Y" }}</strong>
-             <h4> 
+               <h4> 
                {{ firstarticle.title }} 
 
-            </h4>
-
+              </h4>
+  
               <p>
  
              {{ firstarticle.content }} 
@@ -35,8 +35,17 @@
            <div class="secondary-blog">
                  {% for article in section.settings.blog-setting.articles limit:3 %}
                         {{ article.image | image_url: width: master | image_tag  }}
-                        {{ article.title }} 
-                        {{ article.content }} 
+                           <strong>{{ article.created_at | date: "%d %b %Y" }}</strong>
+                           <h4> 
+                           {{ article.title }} 
+            
+                          </h4>
+              
+                          <p>
+             
+                         {{ article.content }} 
+                          </p>
+           
                   {% endfor %}
            </div>
           
