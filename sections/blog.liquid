@@ -11,7 +11,10 @@
 
 
         <div class="blog-section"> 
-          {% for block in section.blocks %}
+          {% for block in section.blocks.settings.blog-setting %}
+
+            
+            
                    {{ block.settings.blog-setting.imgae | image_url: width: master | image_tag  }}
                  
           {% endfor %}
