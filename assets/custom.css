@@ -147,3 +147,8 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.blog-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
