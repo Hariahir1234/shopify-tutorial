@@ -26,4 +26,8 @@
     font-size: 30px !important;
     margin: 0;
   }
+
+  .testimonial-collection .slick-slide {
+    padding: inherit;
+  }
 }
