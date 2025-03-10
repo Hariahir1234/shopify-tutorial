@@ -34,6 +34,7 @@
           </div>
            <div class="secondary-blog">
                  {% for article in section.settings.blog-setting.articles limit:3 %}
+                        <div class="blog-box">
                         {{ article.image | image_url: width: master | image_tag  }}
                            <strong>{{ article.created_at | date: "%d %b %Y" }}</strong>
                            <h2> 
@@ -45,6 +46,8 @@
              
                          {{ article.content }} 
                           </p>
+                        </div>   
+                        
            
                   {% endfor %}
            </div>
