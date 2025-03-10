@@ -97,7 +97,7 @@
               {
                 "type": "text",
                 "id": "name-text-setting",
-                "label": "Name Enter"
+                "label": "First Tex"
               },
               {
                 "type": "text",
@@ -117,57 +117,3 @@
 }
 {% endschema %}
 
-<script>
-$(document).ready(function() {
-     var backButton = `<button class="slick-prev">
-        <img src="{{ 'slick-back.svg' | asset_url }}" alt="Back">
-    </button>`;
-    var nextButton = `<button class="slick-next">
-        <img src="{{ 'slick-next.svg' | asset_url }}" alt="Next">
-    </button>`;
-    var $slider = $('.testimonial-collection');
-        $slider.slick({
-        autoplay: true,
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-           prevArrow: backButton,
-        nextArrow: nextButton,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
-    $('.scroll-left').click(function() {
-        $slider.slick('slickPrev');
-    });
-
-    $('.scroll-right').click(function() {
-        $slider.slick('slickNext');
-    });
-});
-</script>
