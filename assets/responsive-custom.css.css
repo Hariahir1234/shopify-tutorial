@@ -1,5 +1,6 @@
 @media only screen and (max-width: 480px) {
-  .product-collections {
+  .product-collections,
+  .collection-title .top {
     flex-direction: column;
   }
 }
