@@ -12,17 +12,19 @@
 
         <div class="blog-section"> 
 
-          {% for article in section.settings.blog-setting.articles %}
+        
                
         
 
           <div class="main-blog">
-            {% assign firstarticle = section.settings.article-setting.first %}
+            {% assign firstarticle = section.settings.blog-setting.articles.first %}
              {{ firstarticle.image | image_url: width: master | image_tag  }}
              {{ firstarticle.title }} 
              
           </div>
-           <div class="secondary-blog"> </div>
+           <div class="secondary-blog">
+                 {% for article in section.settings.blog-setting.articles %}
+           </div>
             {% endfor %}
         </div>
 
