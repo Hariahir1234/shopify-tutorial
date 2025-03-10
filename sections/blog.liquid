@@ -32,7 +32,8 @@
                                           <a href="{{ article.url }}">
                                             {{ article.image | image_url: width: master | image_tag }}
                                             <div class="side">
-                                              <strong>{{ article.updated_at }}</strong>
+                                            <strong>{{ article.updated_at | date: "%d %b %Y" }}</strong>
+
                                               <h2>{{ article.title }}</h2>
                                             <p>{{ article.content}}</p> </div>
                                            
