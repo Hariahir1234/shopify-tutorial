@@ -20,12 +20,14 @@
             {% assign firstarticle = section.settings.blog-setting.articles.first %}
              {{ firstarticle.image | image_url: width: master | image_tag  }}
              {{ firstarticle.title }} 
+             {{ firstarticle.content }} 
              
           </div>
            <div class="secondary-blog">
                  {% for article in section.settings.blog-setting.articles limit:3 %}
                         {{ article.image | image_url: width: master | image_tag  }}
                         {{ article.title }} 
+                     {{ article.content }} 
                   {% endfor %}
            </div>
           
