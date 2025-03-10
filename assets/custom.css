@@ -4,7 +4,10 @@
   background: #000;
   margin: 0 auto;
 }
-
+.banner__text p {
+  color: white;
+  margin-bottom: 10px !important;
+}
 .testimonial-cover {
   width: 70% !important;
   margin: 0 auto;
