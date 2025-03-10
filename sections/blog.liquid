@@ -25,9 +25,9 @@
                       
                     {% endif %}  
               </div>
-                   <div class="side-bar">  
+                   <div class="side-blog">  
 
-                    {% if blog.title == 'Main Blog' %}
+                    {% if blog.title == 'Side Blog' %}
                        {% for article in blog.articles  %}
                           <a href="{{ article.url }}">
                             {{ article.image | image_url: width: master | image_tag }}
