@@ -15,6 +15,7 @@
                                 {% if blog.title == 'Main Blog'%}
                                    {% for article in blog.articles limit:1 %}
                                       <a href="{{ article.url }}">
+                                        <strong>{{ article.updated_at | date: "%d %b %Y" }}</strong>
                                         {{ article.image | image_url: width: master | image_tag }}
                                         <h2>{{ article.title }}</h2>
                                         <p>{{ article.content}}</p>
