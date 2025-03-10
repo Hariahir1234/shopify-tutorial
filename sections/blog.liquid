@@ -13,12 +13,13 @@
             {% assign blog = blogs[block.settings.blog-setting] %}
             
               {% for article in blog.articles limit:3 %}
-                  <div>
+                <a href="{{ article.url }}">
                       {{ article.image | image_url: width: master | image_tag }}
                       <h3>{{ article.title }}</h3>
                       <p>{{ article.content}}</p>
-                      <a href="{{ article.url }}">Read More</a>
+                 
                   </div>
+                   </a>
               {% endfor %}
           {% endfor %}
       </div>
