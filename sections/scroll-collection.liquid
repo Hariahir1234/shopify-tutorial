@@ -180,6 +180,8 @@
 
 <script>
 $(document).ready(function() {
+    var backButton = '<span class="slick-prev custom-arrow">&#8592;</span>';
+    var nextButton = '<span class="slick-next custom-arrow">&#8594;</span>';
     var $slider = $('.scroll-collections');
     $slider.slick({
         autoplay: true,
@@ -188,6 +190,8 @@ $(document).ready(function() {
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
+        prevArrow: backButton,
+        nextArrow: nextButton,
         responsive: [
             {
                 breakpoint: 1024,
