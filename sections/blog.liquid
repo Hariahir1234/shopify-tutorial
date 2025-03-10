@@ -13,7 +13,7 @@
         <div class="blog-section"> 
 
           <div class="main-blog">
-            {% assign firstarticle = section.settings.article-setting.first %}
+            {% assign firstarticle = section.settings.article-setting %}
              {{ firstarticle.image | image_url: width: master | image_tag  }}
              {{ firstarticle.title }} 
           </div>
