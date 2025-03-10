@@ -6,20 +6,30 @@
             <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
                 {{ section.settings.text-setting }}
             </h2>
-          
         </div>
 
+        <div class="blog-section">
+            {% for block in section.blocks %}
+                {% assign blog = blogs[block.settings.blog-setting] %}
+                
+                {% if blog.articles != blank %}
+                    {% for article in blog.articles limit: 3 %} 
+                        <div class="blog-item">
+                            <img src="{{ article.image | image_url: width: 500 }}" alt="{{ article.title }}">
+                            <h3>{{ article.title }}</h3>
+                            <p>{{ article.content | strip_html | truncate: 150 }}</p>
+                            <a href="{{ article.url }}">Read More</a>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p>No articles found.</p>
+                {% endif %}
+            {% endfor %}
+        </div>
 
-        {% for block in section.blocks %}
-              {% for article in block.settings.blog-setting %}
-                    {{ article.image | image_url: width: master | image_tag }}
-              {% endfor %}
-          
-        {% endfor %}
-
-      
     </div>
 </div>
+
 
 {% schema %}
 {
