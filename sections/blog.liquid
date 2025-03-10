@@ -16,40 +16,11 @@
                
         
 
-          <div class="main-blog">
-            {% assign firstarticle = section.settings.blog-setting.articles.first %}
-             {{ firstarticle.image | image_url: width: master | image_tag  }}
-              <strong>{{ firstarticle.created_at | date: "%d %b %Y" }}</strong>
-               <h2> 
-               {{ firstarticle.title }} 
-
-              </h2>
-  
-              <p>
- 
-             {{ firstarticle.content }} 
-              </p>
-           
-             
-          </div>
+     
            <div class="secondary-blog">
                  {% for blog in section.blocks %}
-                        <div class="blog-box">
-                        {{ article.image | image_url: width: master | image_tag  }}
-                          <div class="top">
-                            <strong>{{ article.created_at | date: "%d %b %Y" }}</strong>
-                           <h2> 
-                           {{ article.title }} 
-            
-                          </h2>
-              
-                          <p>
-             
-                         {{ article.content }} 
-                          </p>
-                          </div>
-                           
-                        </div>   
+
+                     {{ blog.settings.blog-setting }}
                         
            
                   {% endfor %}
