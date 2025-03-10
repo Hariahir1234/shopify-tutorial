@@ -11,12 +11,11 @@
 
 
         <div class="blog-section"> 
-      {% for blog in section.blocks.article %}
-
-                     {{ blog.image | image_url:width: master | image_tag}}
-                        
+            {% for blog in section.blocks.article %}
+                {{ blog.image | image_url:width: master | image_tag}}
+          
            
-                  {% endfor %}
+            {% endfor %}
           
         </div>
 
