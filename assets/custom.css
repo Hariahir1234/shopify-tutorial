@@ -163,3 +163,7 @@
 .side h2 {
   margin: 0;
 }
+
+.blog-section img {
+  width: 100%;
+}
