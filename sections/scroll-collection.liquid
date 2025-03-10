@@ -58,13 +58,17 @@
     display: flex;
     gap: 20px;
 }
+
+  .collection-title.scroll-collection{
+width:60%
+}
   
 {% endstylesheet %}
 
 <div class="page-width">
     <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
         <div class="collection-title scroll-collection"> 
-            <div style="width: 60%">
+           
                 <div style="display:flex;justify-content:space-between;align-items: center">
                     <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
                         {{ section.settings.text-setting }}
@@ -87,7 +91,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+           
         </div>
 
         <div class="scroll-collections">
