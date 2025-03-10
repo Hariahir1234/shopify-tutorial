@@ -157,10 +157,10 @@
         "custom_block_m4Bjij"
       ],
       "settings": {
-        "text-setting": "Blog",
+        "text-setting": "Read our blog",
         "range-top-setting": 20,
         "range-bottom-setting": 20,
-        "select-setting": "15px"
+        "select-setting": "45px"
       }
     }
   },
