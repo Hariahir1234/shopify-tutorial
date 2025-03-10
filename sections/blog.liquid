@@ -16,7 +16,7 @@
                                    {% for article in blog.articles limit:1 %}
                                       <a href="{{ article.url }}">
                                         {{ article.image | image_url: width: master | image_tag }}
-                                        <h3>{{ article.title }}</h3>
+                                        <h2>{{ article.title }}</h2>
                                         <p>{{ article.content}}</p>
                                       </a>
                                       {% endfor %}
@@ -31,7 +31,8 @@
                                      {% for article in blog.articles limit:3 %}
                                           <a href="{{ article.url }}">
                                             {{ article.image | image_url: width: master | image_tag }}
-                                            <div class="side"> <h2>{{ article.title }}</h2>
+                                            <div class="side">
+                                              <h2>{{ article.title }}</h2>
                                             <p>{{ article.content}}</p> </div>
                                            
                                           </a>
