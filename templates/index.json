@@ -146,10 +146,9 @@
     "blog_xi4wqt": {
       "type": "blog",
       "blocks": {
-        "main_block_q9HpmP": {
+        "main_block_hH6kWF": {
           "type": "main_block",
           "settings": {
-            "image-picker-setting": "shopify://shop_images/main-blog.jpg",
             "first-text-setting": "",
             "main-text-setting": "",
             "textarea-setting": ""
@@ -157,7 +156,7 @@
         }
       },
       "block_order": [
-        "main_block_q9HpmP"
+        "main_block_hH6kWF"
       ],
       "settings": {
         "text-setting": "Read our blog",
