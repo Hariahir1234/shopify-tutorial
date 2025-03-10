@@ -159,6 +159,6 @@
   gap: 30px;
 }
 
-.main-blog h2 {
-  margin: 0;
+.main-blog a h2 {
+  margin: 0 !importent;
 }
