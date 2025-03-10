@@ -20,10 +20,10 @@
             {% assign firstarticle = section.settings.blog-setting.articles.first %}
              {{ firstarticle.image | image_url: width: master | image_tag  }}
               <strong>{{ firstarticle.created_at | date: "%d %b %Y" }}</strong>
-               <h3> 
+               <h2> 
                {{ firstarticle.title }} 
 
-              </h3>
+              </h2>
   
               <p>
  
@@ -36,10 +36,10 @@
                  {% for article in section.settings.blog-setting.articles limit:3 %}
                         {{ article.image | image_url: width: master | image_tag  }}
                            <strong>{{ article.created_at | date: "%d %b %Y" }}</strong>
-                           <h3> 
+                           <h2> 
                            {{ article.title }} 
             
-                          </h3>
+                          </h2>
               
                           <p>
              
