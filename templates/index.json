@@ -179,8 +179,8 @@
       ],
       "settings": {
         "text-setting": "Read our blog",
-        "range-top-setting": 20,
-        "range-bottom-setting": 20,
+        "range-top-setting": 38,
+        "range-bottom-setting": 53,
         "select-setting": "45px"
       }
     }
