@@ -109,7 +109,7 @@
   justify-content: end;
 }
 .product.slick-slide {
-  margin: 16px;
+  /* margin: 16px; */
   position: relative;
 }
 .show-more {
