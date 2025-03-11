@@ -1,4 +1,15 @@
 @font-face {
+  font-family: "Remingo";
+  src: url("https://cdn.shopify.com/s/files/1/0669/8375/5820/files/Remingo_By_Shineink_2_1.otf?v=1741341840")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0669/8375/5820/files/Remingo.woff?v=1741341450")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "NanumGothic";
   src: url("https://cdn.shopify.com/s/files/1/0669/8375/5820/files/NanumGothic-Regular.ttf?v=1741342401")
     format("truetype");
@@ -2428,9 +2439,9 @@ input[type="checkbox"] {
   background-color: rgb(var(--color-background));
 }
 
-.header-wrapper--border-bottom {
+/* .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-}
+} */
 
 .header {
   display: grid;
@@ -3728,4 +3739,28 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+}
+
+.banner__buttons {
+  background: white;
+  color: black;
+  border-radius: 30px;
+}
+
+.banner__buttons a {
+  color: black;
+}
+
+.banner__buttons .button:before,
+.banner__buttons .button:after {
+  content: none;
+}
+
+h2.banner__heading.inline-richtext.hxxl {
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
 }
