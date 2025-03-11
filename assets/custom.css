@@ -172,14 +172,14 @@
   height: fit-content;
 }
 .main-blog {
-  width: 45%;
+  width: 50%;
 }
 .main-blog a p,
 .side p {
   margin: 0;
 }
 .side-blog {
-  width: 55%;
+  width: 50%;
 }
 .side-blog img {
   max-width: 100%;
