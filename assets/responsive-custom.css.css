@@ -72,6 +72,9 @@
   .collection-title.scroll-collection .top h2 {
     margin: 10px;
   }
+  .side-blog a {
+    margin-bottom: 29px;
+  }
 }
 
 @media screen and (min-device-width: 769px) and (max-device-width: 1500px) {
