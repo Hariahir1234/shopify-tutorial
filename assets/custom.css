@@ -169,6 +169,7 @@
 } */
 .main-blog img {
   width: 100%;
+  height: fit-content;
 }
 .main-blog {
   width: 45%;
