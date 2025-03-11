@@ -69,6 +69,9 @@
   .collection-title.scroll-collection .top {
     width: 72%;
   }
+  .side p {
+    font-size: 13px;
+  }
   .side h2 {
     font-size: 15px;
   }
