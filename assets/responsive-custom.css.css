@@ -1,7 +1,6 @@
 @media only screen and (max-width: 768px) {
   .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr !importent;
+    grid-template-columns: 1fr 1fr 1fr !important;
   }
 
   .product-collections,
