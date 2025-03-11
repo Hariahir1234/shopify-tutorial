@@ -167,7 +167,9 @@
 /* .side-blog img {
   width: 42%;
 } */
-
+.main-blog img {
+  width: 100%;
+}
 .main-blog {
   width: 45%;
 }
