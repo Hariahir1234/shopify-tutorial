@@ -164,9 +164,6 @@
   margin: 0;
 }
 
-.blog-section img {
-  max-width: 100%;
-}
 /* .side-blog img {
   width: 42%;
 } */
@@ -177,4 +174,8 @@
 
 .side-blog {
   width: 56%;
+}
+.side-blog img {
+  max-width: 100%;
+  height: fit-content;
 }
