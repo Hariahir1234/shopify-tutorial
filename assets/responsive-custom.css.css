@@ -85,9 +85,9 @@
   .blog-section {
     grid-template-columns: 1fr 1fr;
   }
-  .side-blog a:nth-child(3) {
+  /* .side-blog a:nth-child(3) {
     display: none;
-  }
+  } */
   .side strong {
     font-size: 11px;
   }
