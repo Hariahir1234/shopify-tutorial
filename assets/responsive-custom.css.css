@@ -54,6 +54,9 @@
   .blog-section {
     grid-template-columns: 1fr;
   }
+  .blog-section img {
+    height: fit-content;
+  }
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
   .collection-title.scroll-collection {
