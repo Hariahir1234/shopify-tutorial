@@ -93,4 +93,8 @@
   .side-blog a {
     margin-bottom: 29px;
   }
+  .main-blog a {
+    display: flex;
+    flex-direction: column;
+  }
 }
