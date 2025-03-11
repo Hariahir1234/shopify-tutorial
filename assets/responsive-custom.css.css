@@ -64,6 +64,9 @@
   .main-blog {
     width: 100%;
   }
+  .side-blog {
+    width: 100%;
+  }
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
   .collection-title.scroll-collection {
