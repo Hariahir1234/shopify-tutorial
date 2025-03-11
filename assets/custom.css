@@ -149,9 +149,9 @@
 }
 
 .blog-section {
-  display: grid;
+  display: flex;
   gap: 30px;
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
 }
 .side-blog a {
   display: flex;
