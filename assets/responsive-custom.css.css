@@ -78,4 +78,7 @@
   .collection-title.scroll-collection .top {
     width: 72%;
   }
+  .blog-section {
+    grid-template-columns: 1fr 1.2fr;
+  }
 }
