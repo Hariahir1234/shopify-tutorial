@@ -48,7 +48,9 @@
   .testimonial-cover {
     width: 82% !important;
   }
-
+  .side-blog a {
+    flex-direction: column;
+  }
   .blog-section {
     grid-template-columns: 1fr;
   }
