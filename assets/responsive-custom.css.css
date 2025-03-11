@@ -48,6 +48,15 @@
   .testimonial-cover {
     width: 82% !important;
   }
+  .side-blog a {
+    flex-direction: column;
+  }
+  .blog-section {
+    grid-template-columns: 1fr;
+  }
+  .blog-section img {
+    height: fit-content;
+  }
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
   .collection-title.scroll-collection {
@@ -69,10 +78,10 @@
   .collection-title.scroll-collection .top {
     width: 72%;
   }
-  .side p {
-    font-size: 13px;
+  .blog-section {
+    grid-template-columns: 1fr 1.2fr;
   }
-  .side h2 {
-    font-size: 15px;
+  .side-blog a:nth-child(3) {
+    display: none;
   }
 }
