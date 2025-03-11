@@ -44,10 +44,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/Group_1000002196.png",
-        "image_2": "shopify://shop_images/Group_1000002195.jpg",
+        "image": "shopify://shop_images/craft-banner.png",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
@@ -55,7 +54,7 @@
         "color_scheme": "scheme-3",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
-        "show_text_below": false
+        "show_text_below": true
       }
     },
     "custom_collection_gtkwcy": {
