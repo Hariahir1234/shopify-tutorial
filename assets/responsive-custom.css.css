@@ -84,4 +84,10 @@
   .side-blog a:nth-child(3) {
     display: none;
   }
+  .side p {
+    font-size: 13px;
+  }
+  .side h2 {
+    font-size: 15px;
+  }
 }
