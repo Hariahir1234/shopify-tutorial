@@ -48,6 +48,10 @@
   .testimonial-cover {
     width: 82% !important;
   }
+
+  .blog-section {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
   .collection-title.scroll-collection {
