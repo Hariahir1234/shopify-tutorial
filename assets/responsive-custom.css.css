@@ -102,8 +102,4 @@
     display: flex;
     flex-direction: column;
   }
-  .main-blog a img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 }
