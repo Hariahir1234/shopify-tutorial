@@ -88,14 +88,17 @@
   .side-blog a:nth-child(3) {
     display: none;
   }
+  .side strong {
+    font-size: 11px;
+  }
   .side p {
-    font-size: 13px;
+    font-size: 8px;
   }
   .side h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
   .side-blog a {
-    margin-bottom: 29px;
+    margin-bottom: 10px;
   }
   .main-blog a {
     display: flex;
