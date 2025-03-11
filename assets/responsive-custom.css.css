@@ -82,9 +82,7 @@
   .collection-title.scroll-collection .top {
     width: 72%;
   }
-  .blog-section {
-    grid-template-columns: 1fr 1fr;
-  }
+
   /* .side-blog a:nth-child(3) {
     display: none;
   } */
