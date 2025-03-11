@@ -174,7 +174,10 @@
 .main-blog {
   width: 45%;
 }
-
+.main-blog a p,
+.side p {
+  margin: 0;
+}
 .side-blog {
   width: 55%;
 }
