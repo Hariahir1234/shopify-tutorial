@@ -273,11 +273,9 @@
       }
     {% endstyle %}
 
-    {% if request.design_mode %}
+    
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'responsive-custom.css.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-    
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
