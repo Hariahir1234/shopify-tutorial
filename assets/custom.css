@@ -255,3 +255,7 @@ ul.list.list-payment {
 .products-cover p {
   margin: 0;
 }
+
+.products-cover img {
+  margin: 0;
+}
