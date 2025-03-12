@@ -288,7 +288,7 @@
                <div class="pay_produt_icon">
               {% assign enabled_payment_types = 'visa,master,maestro,american_express,paypal,discover,union pay' | remove: ' ' | split: ',' %}
                 <ul class="list list-payment" role="list">
-                  {% for type in enabled_payment_types %} <li>
+                  {% for type in enabled_payment_types %} <li style="list-style:none">
                     {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                   </li>
                   {%- endfor -%}
