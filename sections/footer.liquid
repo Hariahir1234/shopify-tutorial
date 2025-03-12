@@ -230,10 +230,8 @@
                   </h3>
                 {%- endif -%}
               {%- endform -%}
-            </div>
-          {%- endif -%}
 
-              {%- if section.settings.payment_enable -%}
+                   {%- if section.settings.payment_enable -%}
                     <div class="footer__payment">
                            <div class="pay_produt_icon">
                              <h2 class="footer-block__heading inline-richtext">We Accepet</h2>
@@ -246,7 +244,11 @@
                                 </ul>
                           </div>
                     </div>
-          {%- endif -%}      
+          {%- endif -%}
+            </div>
+          {%- endif -%}
+
+               
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
