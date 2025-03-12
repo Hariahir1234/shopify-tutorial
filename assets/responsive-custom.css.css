@@ -104,6 +104,11 @@
   }
 }
 
+@media screen and (min-device-width: 769px) and (max-device-width: 989px) {
+  .header {
+    grid-template-columns: 0.8fr 3fr 0.8fr !important;
+  }
+}
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
   .collection-title.scroll-collection {
     width: 100%;
