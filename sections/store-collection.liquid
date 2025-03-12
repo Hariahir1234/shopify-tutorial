@@ -1,11 +1,18 @@
 {% schema %}
   {
-    "name": "Section Name",
-    "settings": []
-    ,
+    "name": "Store Products",
+     "class": "store-product-cover" ,
+      "settings": [
+      {
+          "type": "product_list",
+          "id": "product_list-setting",
+          "label": "Select Products"
+        }
+      ],
+    
     "presets":[
       {
-          "name" : "Section Name"
+          "name" : "Store Products"
         }  
     ]
   }
