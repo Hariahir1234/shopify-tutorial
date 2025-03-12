@@ -157,7 +157,7 @@
               </div>
             {%- endfor -%}
             {%- if section.settings.payment_enable -%}
-                    <div class="footer__payment">
+                    <div class="footer-block--newsletter scroll-trigger animate--slide-in">
                            <div class="pay_produt_icon">
                              <h2 class="footer-block__heading inline-richtext">We Accepet</h2>
                               {% assign enabled_payment_types = 'visa,master,maestro,american_express,paypal' | remove: ' ' | split: ',' %}
