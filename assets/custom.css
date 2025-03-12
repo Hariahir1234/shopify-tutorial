@@ -246,3 +246,8 @@ ul.list.list-payment {
   text-align: start;
   margin-bottom: 20px;
 }
+
+.products-cover {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
