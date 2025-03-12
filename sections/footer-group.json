@@ -14,6 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text_pAm3cN": {
+          "type": "text",
+          "settings": {
+            "heading": "We Accepet",
+            "subtext": ""
+          }
+        },
         "brand_information_fDby4X": {
           "type": "brand_information",
           "settings": {
@@ -36,6 +43,7 @@
         }
       },
       "block_order": [
+        "text_pAm3cN",
         "brand_information_fDby4X",
         "link_list_ftXBY7",
         "link_list_WP6Fbd"
