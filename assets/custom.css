@@ -252,3 +252,6 @@ ul.list.list-payment {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
 }
+.products-cover p {
+  margin: 0;
+}
