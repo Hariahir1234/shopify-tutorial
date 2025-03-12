@@ -1,6 +1,6 @@
 @media screen and (max-device-width: 480px) {
   .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
-    grid-template-columns: 1;
+    grid-template-columns: 1fr !importent;
     gap: 58px;
   }
 }
