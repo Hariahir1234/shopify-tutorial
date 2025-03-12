@@ -235,3 +235,14 @@ ul.list.list-payment {
 .footer-block--newsletter p {
   margin: 0 !important;
 }
+
+button#Subscribe {
+  color: rgba(var(--color-foreground), 0.75);
+  background-color: rgb(var(--color-background));
+  border: 1px solid;
+  padding: 11px 22px;
+  width: 100%;
+  border-top: none;
+  text-align: start;
+  margin-bottom: 20px;
+}
