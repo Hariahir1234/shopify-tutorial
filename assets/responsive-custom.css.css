@@ -71,6 +71,11 @@
   .side-blog {
     width: 100%;
   }
+
+  .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 58px;
+  }
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
   .collection-title.scroll-collection {
