@@ -214,5 +214,5 @@
 }
 
 .footer-block--newsletter {
-  align-items: start;
+  align-items: start !importent;
 }
