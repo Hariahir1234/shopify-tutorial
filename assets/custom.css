@@ -195,6 +195,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.grid--4-col-tablet .grid__item {
-  width: 100% !importent;
+.grid--1-col .grid__item {
+  max-width: 100%;
+  width: 100% !important;
 }
