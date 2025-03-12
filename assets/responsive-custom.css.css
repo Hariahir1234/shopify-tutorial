@@ -8,6 +8,11 @@
     margin: 0 !important;
     margin-bottom: 30px !important;
   }
+  .products-cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -87,6 +92,12 @@
   .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 58px;
+  }
+
+  .products-cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
   }
 }
 
