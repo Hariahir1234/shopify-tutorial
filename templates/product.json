@@ -116,28 +116,37 @@
         "custom_black_xXXnHV": {
           "type": "custom_black",
           "settings": {
-            "textarea-setting": "",
-            "name-text-setting": "",
-            "position-text-setting": ""
+            "textarea-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960.",
+            "name-text-setting": "Will Jacks",
+            "position-text-setting": "Designer"
           }
         },
-        "custom_black_64UCkE": {
+        "custom_black_T7q7ny": {
           "type": "custom_black",
           "settings": {
-            "textarea-setting": "",
-            "name-text-setting": "",
-            "position-text-setting": ""
+            "textarea-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960.",
+            "name-text-setting": "Will Jacks",
+            "position-text-setting": "Designer"
+          }
+        },
+        "custom_black_ydGVVp": {
+          "type": "custom_black",
+          "settings": {
+            "textarea-setting": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960.",
+            "name-text-setting": "Will Jacks",
+            "position-text-setting": "Designer"
           }
         }
       },
       "block_order": [
         "custom_black_xXXnHV",
-        "custom_black_64UCkE"
+        "custom_black_T7q7ny",
+        "custom_black_ydGVVp"
       ],
       "settings": {
         "text-setting": "Our Happy Clients",
         "range-top-setting": 52,
-        "range-bottom-setting": 20,
+        "range-bottom-setting": 76,
         "select-setting": "45px"
       }
     }
