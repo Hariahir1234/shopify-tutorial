@@ -215,6 +215,7 @@
 
 .footer-block--newsletter {
   align-items: start !important;
+  margin-top: 0 !important;
 }
 ul.list.list-payment {
   margin: 0 !important;
