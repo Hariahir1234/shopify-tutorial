@@ -212,3 +212,7 @@
   font-size: 20px !important;
   text-align: start;
 }
+
+.footer-block--newsletter {
+  align-items: start;
+}
