@@ -1,7 +1,10 @@
-.footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
-  grid-template-columns: 1fr !important;
-  gap: 0px !important;
+@media screen and (max-device-width: 480px) {
+  .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
+    grid-template-columns: 1fr !important;
+    gap: 0px !important;
+  }
 }
+
 @media only screen and (max-width: 768px) {
   .header {
     grid-template-columns: 1fr 1fr 1fr !important;
