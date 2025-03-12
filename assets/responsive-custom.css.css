@@ -109,7 +109,8 @@
   }
   .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.6fr 0.6fr 1fr 1fr;
+    gap: 44px;
   }
 }
 
@@ -139,6 +140,7 @@
   }
   .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet.scroll-trigger.animate--slide-in {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.6fr 0.6fr 1fr 1fr;
+    gap: 44px;
   }
 }
