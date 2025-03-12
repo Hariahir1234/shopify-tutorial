@@ -216,3 +216,7 @@
 .footer-block--newsletter {
   align-items: start !important;
 }
+ul.list.list-payment {
+  margin: 0 !important;
+  padding: 0 !important;
+}
