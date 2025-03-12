@@ -1,15 +1,16 @@
 <div class="page-width"> 
 
-  <div class="products-cover"> </div>
-  
-  {% for product in section.settings.product_list-setting %}
+  <div class="products-cover"> 
+    {% for product in section.settings.product_list-setting %}
 
    {{ product.featured_image | image_url: width: master | image_tag }}
      <strong>{{ product.title }} </strong> 
       <p> {{ product.price | money }} </p>
    
 
-{% endfor %}
+{% endfor %} </div>
+  
+
 
 </div>
 
