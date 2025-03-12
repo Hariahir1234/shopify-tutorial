@@ -2,7 +2,7 @@
 
  {% for product in section.settings.product_list-setting %}
 
-   {{ product.images }}
+   {{ product.images | image_url: width: master | image_tag }}
 
 {% endfor %}
 
