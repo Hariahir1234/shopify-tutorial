@@ -287,12 +287,12 @@
           <div class="footer__payment">
                <div class="pay_produt_icon">
               {% assign enabled_payment_types = 'visa,master,maestro,american_express,paypal,discover,union pay' | remove: ' ' | split: ',' %}
-              <ul class="list list-payment" role="list">
-                {% for type in enabled_payment_types %} <li>
-                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                </li>
-                {%- endfor -%}
-              </ul>
+                <ul class="list list-payment" role="list">
+                  {% for type in enabled_payment_types %} <li>
+                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                  </li>
+                  {%- endfor -%}
+                </ul>
             </div>
           </div>
         {%- endif -%}
