@@ -205,3 +205,10 @@
 
   gap: 4px;
 }
+
+.footer-block__heading {
+  margin-bottom: 3rem;
+  margin-top: 0;
+  font-size: 20px !important;
+  text-align: start;
+}
