@@ -149,23 +149,12 @@
         "range-bottom-setting": 76,
         "select-setting": "45px"
       }
-    },
-    "custom_collection_7GrBy9": {
-      "type": "custom-collection",
-      "settings": {
-        "collection-setting": "scroll-collection",
-        "text-setting": "Explore By Category",
-        "range-top-setting": 20,
-        "range-bottom-setting": 81,
-        "select-setting": "45px"
-      }
     }
   },
   "order": [
     "main",
     "related-products",
     "scroll_collection_T8kzQ7",
-    "testimonials_x4TeKW",
-    "custom_collection_7GrBy9"
+    "testimonials_x4TeKW"
   ]
 }
