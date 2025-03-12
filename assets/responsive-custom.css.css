@@ -10,7 +10,7 @@
     margin-bottom: 30px !important;
   }
   .products-cover {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
