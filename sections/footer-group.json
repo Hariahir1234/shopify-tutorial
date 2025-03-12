@@ -14,6 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text_CUeg9t": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact Us",
+            "subtext": "<p>Support@craftfaction.com</p>"
+          }
+        },
         "link_list_ftXBY7": {
           "type": "link_list",
           "settings": {
@@ -30,6 +37,7 @@
         }
       },
       "block_order": [
+        "text_CUeg9t",
         "link_list_ftXBY7",
         "link_list_WP6Fbd"
       ],
