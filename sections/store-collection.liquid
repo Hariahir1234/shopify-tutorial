@@ -3,8 +3,9 @@
  {% for product in section.settings.product_list-setting %}
 
    {{ product.featured_image | image_url: width: master | image_tag }}
-     {{ product.title }}
-    {{ product.price | money }}
+     <strong>{{ product.title }} </strong> 
+      <p> {{ product.price | money }} </p>
+   
 
 {% endfor %}
 
