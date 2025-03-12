@@ -20,6 +20,8 @@
     "store_collection_fBAM3k": {
       "type": "store-collection",
       "settings": {
+        "range-top-setting": 20,
+        "range-bottom-setting": 55,
         "product_list-setting": [
           "product-1",
           "product-2",
