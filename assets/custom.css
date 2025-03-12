@@ -199,3 +199,9 @@
   max-width: 100%;
   width: 100% !important;
 }
+
+.list-payment {
+  justify-content: start !important;
+
+  gap: 4px;
+}
