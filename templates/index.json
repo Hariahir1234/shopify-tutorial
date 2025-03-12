@@ -138,7 +138,7 @@
       ],
       "settings": {
         "text-setting": "What they’re saying",
-        "range-top-setting": 20,
+        "range-top-setting": 62,
         "range-bottom-setting": 60,
         "select-setting": "45px"
       }
