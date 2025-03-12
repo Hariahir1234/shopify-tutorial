@@ -29,21 +29,10 @@
           "product-6"
         ]
       }
-    },
-    "scroll_collection_eN4MRA": {
-      "type": "scroll-collection",
-      "settings": {
-        "collection-setting": "scroll-collection",
-        "text-setting": "Collection",
-        "range-top-setting": 20,
-        "range-bottom-setting": 20,
-        "select-setting": "15px"
-      }
     }
   },
   "order": [
     "main",
-    "store_collection_fBAM3k",
-    "scroll_collection_eN4MRA"
+    "store_collection_fBAM3k"
   ]
 }
