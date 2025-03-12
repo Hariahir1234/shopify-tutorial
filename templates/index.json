@@ -69,7 +69,6 @@
     },
     "scroll_collection_43MJVw": {
       "type": "scroll-collection",
-      "disabled": true,
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Most Selled Product",
