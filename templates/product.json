@@ -109,11 +109,43 @@
         "range-bottom-setting": 20,
         "select-setting": "45px"
       }
+    },
+    "testimonials_x4TeKW": {
+      "type": "testimonials",
+      "blocks": {
+        "custom_black_xXXnHV": {
+          "type": "custom_black",
+          "settings": {
+            "textarea-setting": "",
+            "name-text-setting": "",
+            "position-text-setting": ""
+          }
+        },
+        "custom_black_64UCkE": {
+          "type": "custom_black",
+          "settings": {
+            "textarea-setting": "",
+            "name-text-setting": "",
+            "position-text-setting": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_black_xXXnHV",
+        "custom_black_64UCkE"
+      ],
+      "settings": {
+        "text-setting": "Our Happy Clients",
+        "range-top-setting": 52,
+        "range-bottom-setting": 20,
+        "select-setting": "45px"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "scroll_collection_T8kzQ7"
+    "scroll_collection_T8kzQ7",
+    "testimonials_x4TeKW"
   ]
 }
