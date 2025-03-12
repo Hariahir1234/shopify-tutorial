@@ -1,6 +1,6 @@
-
-
- {% for product in section.settings.product_list-setting %}
+<div class="page-width"> 
+  
+  {% for product in section.settings.product_list-setting %}
 
    {{ product.featured_image | image_url: width: master | image_tag }}
      <strong>{{ product.title }} </strong> 
@@ -8,6 +8,10 @@
    
 
 {% endfor %}
+
+</div>
+
+
 
 
 {% schema %}
