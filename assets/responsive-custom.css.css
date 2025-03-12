@@ -77,6 +77,9 @@
     gap: 58px;
   }
 }
+
+@media screen and (max-device-width: 480px) {
+}
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
   .collection-title.scroll-collection {
     width: 100%;
