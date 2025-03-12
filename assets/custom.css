@@ -220,7 +220,7 @@
   align-items: start !important;
   margin-top: 0 !important;
   flex-direction: column;
-  gap: 15px !important;
+  gap: 0px !important;
   justify-content: start !important;
 }
 ul.list.list-payment {
