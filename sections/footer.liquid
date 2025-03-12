@@ -156,7 +156,20 @@
                 {%- endcase -%}
               </div>
             {%- endfor -%}
-            <h2 class="footer-block__heading inline-richtext">We Accepet</h2>
+            {%- if section.settings.payment_enable -%}
+          <div class="footer__payment">
+               <div class="pay_produt_icon">
+                 <h2 class="footer-block__heading inline-richtext">We Accepet</h2>
+              {% assign enabled_payment_types = 'visa,master,maestro,american_express,paypal,discover,union pay' | remove: ' ' | split: ',' %}
+                <ul class="list list-payment" role="list">
+                  {% for type in enabled_payment_types %} <li style="list-style:none">
+                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                  </li>
+                  {%- endfor -%}
+                </ul>
+            </div>
+          </div>
+        {%- endif -%}
           </div>
         {%- endif -%}
 
