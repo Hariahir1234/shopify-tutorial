@@ -231,3 +231,7 @@ ul.list.list-payment {
 .footer__payment {
   margin: 0 !important;
 }
+
+.footer-block--newsletter p {
+  margin: 0 !important;
+}
