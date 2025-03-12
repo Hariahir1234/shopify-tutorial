@@ -255,7 +255,9 @@ ul.list.list-payment {
 .products-cover p {
   margin: 0;
 }
-
+.products-cover .product {
+  text-align: "center";
+}
 .products-cover img {
   margin: 0;
 }
