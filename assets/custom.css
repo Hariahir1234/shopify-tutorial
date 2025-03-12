@@ -213,6 +213,9 @@
   text-align: start;
 }
 
+.footer-block__newsletter {
+  flex-grow: 0;
+}
 .footer-block--newsletter {
   align-items: start !important;
   margin-top: 0 !important;
