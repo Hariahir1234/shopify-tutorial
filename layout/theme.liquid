@@ -273,6 +273,9 @@
       }
     {% endstyle %}
 
+    {% if request.design_mode %}
+
+    {% endif %}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'responsive-custom.css.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
