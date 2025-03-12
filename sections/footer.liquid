@@ -156,20 +156,7 @@
                 {%- endcase -%}
               </div>
             {%- endfor -%}
-            {%- if section.settings.payment_enable -%}
-                    <div class="footer__payment">
-                           <div class="pay_produt_icon">
-                             <h2 class="footer-block__heading inline-richtext">We Accepet</h2>
-                              {% assign enabled_payment_types = 'visa,master,maestro,american_express,paypal' | remove: ' ' | split: ',' %}
-                                <ul class="list list-payment" role="list">
-                                  {% for type in enabled_payment_types %} <li style="list-style:none">
-                                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                                  </li>
-                                  {%- endfor -%}
-                                </ul>
-                          </div>
-                    </div>
-          {%- endif -%}
+       
              <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
@@ -245,6 +232,21 @@
               {%- endform -%}
             </div>
           {%- endif -%}
+
+              {%- if section.settings.payment_enable -%}
+                    <div class="footer__payment">
+                           <div class="pay_produt_icon">
+                             <h2 class="footer-block__heading inline-richtext">We Accepet</h2>
+                              {% assign enabled_payment_types = 'visa,master,maestro,american_express,paypal' | remove: ' ' | split: ',' %}
+                                <ul class="list list-payment" role="list">
+                                  {% for type in enabled_payment_types %} <li style="list-style:none">
+                                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                                  </li>
+                                  {%- endfor -%}
+                                </ul>
+                          </div>
+                    </div>
+          {%- endif -%}      
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
