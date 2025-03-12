@@ -3,6 +3,7 @@
  {% for product in section.settings.product_list-setting %}
 
    {{ product.images | image_url: width: master | image_tag }}
+    {{ product.price | money }}
 
 {% endfor %}
 
