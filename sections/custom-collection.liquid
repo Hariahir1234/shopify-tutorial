@@ -27,21 +27,27 @@
 
   <div class="product-collections">
     
-    
-     {% if  section.settings.collection-setting  %}
-       
-        {% for collection in section.settings.collection-setting.collection  %}
+   <div class="product-collections">
+  {% if section.settings.collection_setting %}
+    {% assign selected_collection = collections[section.settings.collection_setting] %}
 
+    {% if selected_collection and selected_collection.products.size > 0 %}
+      {% for product in selected_collection.products limit:4 %}
         <div class="product">
-            <a href="{{ collection.url }}">
-              {{ collection.featured_image | image_url: width: master | image_tag  }}
-            </a> 
+          <a href="{{ product.url }}">
+            {{ product.featured_image | image_url: width: 'master' | image_tag }}
+          </a>
+          <p>{{ product.title }}</p>
         </div>
-               
-        {% endfor %}
-        
-       
-     {% endif %} 
+      {% endfor %}
+    {% else %}
+      <p>No products found in the selected collection.</p>
+    {% endif %}
+  {% else %}
+    <p>Please select a collection in the theme editor.</p>
+  {% endif %}
+</div>
+
 
   
   </div>
