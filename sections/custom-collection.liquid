@@ -56,7 +56,7 @@
 
     {% if section.settings.collection-setting != blank %}  
         {% for collection in section.settings.collection-setting %}
-           <a href="{{ collectio.url }}">
+           <a href="{{ collection.url }}">
             {{ collection.featured_image | image_url: width: master | image_tag }}
              </a> 
         {% endfor %}
