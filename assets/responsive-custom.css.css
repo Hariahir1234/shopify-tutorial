@@ -14,7 +14,7 @@
   }
   .thumbnail-slider img {
     max-height: 89px;
-    height: 89px;
+    height: 89px !important;
   }
 }
 
