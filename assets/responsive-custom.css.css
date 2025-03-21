@@ -23,6 +23,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .product-collections img {
+    height: fit-content;
+  }
   .top h2 {
     font-size: 30px !important;
     margin-bottom: 0;
