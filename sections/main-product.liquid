@@ -78,22 +78,23 @@
       <div class="grid__item product__media-wrapper">
        {% comment %}   {% render 'product-media-gallery', variant_images: variant_images %}  {% endcomment %}
         <div class="product-slider">
-         <div class="main-slider">
-            {% for image in product.images %}
-              <div>
-                {{ image | image_url: width : 1200 | image_tag }}
-              </div>
-            {% endfor %}
-          </div>
+       <div class="main-slider">
+          {% for image in product.images %}
+            <div>
+              {{ image | image_url: width: 'master' | image_tag }}
+            </div>
+          {% endfor %}
+        </div>
+        
+        <!-- Thumbnail Slider -->
+        <div class="thumbnail-slider">
+          {% for image in product.images %}
+            <div>
+              {{ image | image_url: width: 'master' | image_tag }}
+            </div>
+          {% endfor %}
+        </div>
 
-          <!-- Thumbnail Slider -->
-          <div class="thumbnail-slider">
-            {% for image in product.images %}
-              <div>
-                {{ image | image_url: width: 100 | image_tag }}
-              </div>
-            {% endfor %}
-          </div>
       </div>
 
       </div>
