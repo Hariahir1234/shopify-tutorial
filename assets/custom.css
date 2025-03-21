@@ -17,6 +17,12 @@
   margin: 0 auto;
 }
 
+.product-collections p {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
 .testimonial-cover p {
   margin-bottom: 30px;
 }
