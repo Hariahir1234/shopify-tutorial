@@ -42,6 +42,7 @@
 }
 .product-collections img {
   width: 100%;
+  height: fit-content;
 }
 .slick-prev:before {
   content: "";
