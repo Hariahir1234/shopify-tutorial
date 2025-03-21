@@ -142,12 +142,27 @@
         "range-top-setting": 52,
         "range-bottom-setting": 76
       }
+    },
+    "collection_category_qznkxq": {
+      "type": "collection-category",
+      "settings": {
+        "collection-setting": [
+          "collection-2",
+          "collection-3",
+          "scroll-collection",
+          "collection-4"
+        ],
+        "text-setting": "Collection",
+        "range-top-setting": 20,
+        "range-bottom-setting": 20
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "scroll_collection_T8kzQ7",
-    "testimonials_x4TeKW"
+    "testimonials_x4TeKW",
+    "collection_category_qznkxq"
   ]
 }
