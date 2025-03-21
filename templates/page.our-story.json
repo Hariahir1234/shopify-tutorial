@@ -20,9 +20,9 @@
     "header_title_GcJ9Bi": {
       "type": "header-title",
       "settings": {
-        "text-setting": "OUR STORYss",
-        "range-top-setting": 20,
-        "range-bottom-setting": 20
+        "text-setting": "OUR STORY",
+        "range-top-setting": 100,
+        "range-bottom-setting": 100
       }
     }
   },
