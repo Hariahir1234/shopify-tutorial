@@ -67,7 +67,8 @@
     padding: inherit;
   }
 
-  .show-more {
+  .show-more,
+  .scroll-button {
     position: relative;
   }
 
