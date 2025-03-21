@@ -32,10 +32,17 @@
 
 .product-collections img {
   width: 100%;
-  height: fit-content;
+  height: 432px;
   max-height: 512px;
   object-fit: cover;
 }
+
+/* .product-collections img {
+  width: 100%;
+  height: fit-content;
+  max-height: 512px;
+  object-fit: cover;
+} */
 .slick-prev:before,
 .slick-next:before {
   font-family: inherit !important;
