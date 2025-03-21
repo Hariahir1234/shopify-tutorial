@@ -143,7 +143,8 @@ h2.banner__heading.inline-richtext {
 
 .collection-title.scroll-collection .top {
   width: 100%;
-  position: relative;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 .collection-title .top {
   display: flex;
