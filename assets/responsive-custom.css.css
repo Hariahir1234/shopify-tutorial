@@ -67,6 +67,10 @@
     padding: inherit;
   }
 
+  .show-more {
+    position: relative;
+  }
+
   .line {
     width: 39%;
 
