@@ -100,7 +100,7 @@
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Related products",
-        "range-top-setting": 37,
+        "range-top-setting": 75,
         "range-bottom-setting": 52
       }
     },
