@@ -140,10 +140,9 @@
 }
 .collection-title .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-
 .blog-section {
   display: flex;
   gap: 30px;
