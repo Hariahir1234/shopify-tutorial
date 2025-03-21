@@ -122,9 +122,10 @@
 
 .scroll-button {
   display: flex;
-  gap: 10px;
-
-  justify-content: space-between;
+  gap: 28px;
+  justify-content: right;
+  position: absolute;
+  right: 0;
 }
 .scroll-button button {
   border: none;
