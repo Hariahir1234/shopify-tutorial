@@ -148,6 +148,7 @@ h2.banner__heading.inline-richtext {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .blog-section {
   display: flex;
