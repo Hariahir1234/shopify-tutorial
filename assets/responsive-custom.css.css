@@ -152,7 +152,9 @@
 
 @media screen and (min-device-width: 769px) and (max-device-width: 1500px) {
   .collection-title.scroll-collection .top {
-    width: 72%;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
   }
 
   /* .side-blog a:nth-child(3) {
