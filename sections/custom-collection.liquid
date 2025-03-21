@@ -24,6 +24,8 @@
     
  
 
+{% comment %}
+  
 
   <div class="product-collections">
     
@@ -33,8 +35,8 @@
         {% for collection in section.settings.collection-setting.collection limit:4 %}
 
         <div class="product">
-            <a href="{{ collection.url }}">
-              {{ collection.featured_image | image_url: width: master | image_tag  }}
+            <a href="{{ product.url }}">
+              {{ product.featured_image | image_url: width: master | image_tag  }}
             </a> 
         </div>
                
@@ -42,6 +44,9 @@
         
        
      {% endif %} 
+
+    
+     {% endcomment %}
 
   
   </div>
