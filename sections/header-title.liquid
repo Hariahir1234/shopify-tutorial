@@ -1,67 +1,59 @@
-
-
-  <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
-
-<div class="collection-title scroll-trigger animate--slide-in" 
-     style="background-image: url('{{ section.settings.image-picker-setting | image_url: 'master' }}');">
-
- 
+<div style="padding-top:{{ section.settings.range-top-setting }}px; padding-bottom:{{ section.settings.range-bottom-setting }}px">
+  
+  <div class="collection-title scroll-trigger animate--slide-in" 
+       style="background-image: url('{{ section.settings.image-picker-setting | image_url: 'master' }}'); background-size: cover; background-position: center;">
 
     <div class="top">
-          
-         <h2 class="font">
-              {{ section.settings.text-setting }}
-        </h2>
-        
+      <h2 class="font">
+        {{ section.settings.text-setting }}
+      </h2>
     </div>
-  
-  </div>
-  </div>
 
+  </div> <!-- Closing for .collection-title -->
+
+</div> <!-- Closing for main container -->
 
 {% schema %}
-  {
-    "name": "header title",
-     "class": "header-title-cover", 
-    "settings": [
-        {
-          "type": "image_picker",
-          "id": "image-picker-setting",
-          "label": "Select Image",
-          
-        },
-        {
-            "type": "text",
-            "id": "text-setting",
-            "label": "Enter Title",
-            "default": "OUR STORY"
-        }
-      ,{
-        "type": "range",
-        "id": "range-top-setting",
-        "min": 20,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Padding Top",
-        "default": 20
-      }
-      ,{
-        "type": "range",
-        "id": "range-bottom-setting",
-        "min": 20,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Padding-Bottom",
-        "default": 20
-      }
-
-        
-        
-    ],
-    "presets": [
-        {"name": "header title"}
-      ]
-  }
+{
+  "name": "Header Title",
+  "class": "header-title-cover", 
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image-picker-setting",
+      "label": "Select Image"
+    },
+    {
+      "type": "text",
+      "id": "text-setting",
+      "label": "Enter Title",
+      "default": "OUR STORY"
+    },
+    {
+      "type": "range",
+      "id": "range-top-setting",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "range-bottom-setting",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header Title"
+    }
+  ]
+}
 {% endschema %}
