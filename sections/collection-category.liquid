@@ -1,0 +1,117 @@
+
+
+<div class="page-width">
+
+
+  <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
+
+  <div class="collection-title scroll-trigger animate--slide-in"> 
+ 
+
+    <div class="top">
+          
+         <h2 class="font">
+              {{ section.settings.text-setting }}
+        </h2>
+        
+         <a href="{{ section.settings.collection-setting.url }}" class="show-more">
+            View all   {{- 'next-arrow.svg' | inline_asset_content -}}
+          </a> 
+          
+    </div>
+  
+  </div>
+    
+ 
+
+{% comment %}
+  
+
+  <div class="product-collections">
+    
+    
+     {% if  section.settings.collection-setting.products  %}
+       
+        {% for collection in section.settings.collection-setting.collection limit:4 %}
+
+        <div class="product">
+            <a href="{{ product.url }}">
+              {{ product.featured_image | image_url: width: master | image_tag  }}
+            </a> 
+        </div>
+               
+        {% endfor %}
+        
+       
+     {% endif %} 
+
+    
+
+
+  
+  </div>
+
+  {% endcomment %}
+
+
+    <div class="product-collections">
+      {% if section.settings.collection-setting != blank %}  
+          {% for collection in section.settings.collection-setting limit:5 %}
+             <a href="{{ collection.url }}">
+              {{ collection.featured_image | image_url: width: master | image_tag }}
+               </a> 
+          {% endfor %}
+      {% endif %}
+
+    </div>
+
+ </div>
+
+</div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Custom Collection",
+    "class":"collection-cover",
+    
+    "settings": [
+      {
+        "type": "collection_list",
+        "id":"collection-setting",
+        "label": "Select Collection"
+      },
+      {
+        "type": "text",
+        "id": "text-setting",
+        "label": "Enter Text",
+        "default":"Collection"
+      },{
+        "type": "range",
+        "id": "range-top-setting",
+        "min": 20,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding Top",
+        "default": 20
+      }
+      ,{
+        "type": "range",
+        "id": "range-bottom-setting",
+        "min": 20,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding-Bottom",
+        "default": 20
+      }
+    ],
+    "presets": [
+       {"name":"Custom Collection" }
+    ]
+  }
+{% endschema %}
