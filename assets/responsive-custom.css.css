@@ -23,9 +23,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .product-collections img {
-    height: fit-content;
-  }
   .top h2 {
     font-size: 30px !important;
     margin-bottom: 0;
@@ -157,9 +154,6 @@
 }
 
 @media screen and (min-device-width: 769px) and (max-device-width: 1500px) {
-  .product-collections img {
-    height: fit-content;
-  }
   .collection-title.scroll-collection .top {
     width: 100%;
     flex-direction: column;
