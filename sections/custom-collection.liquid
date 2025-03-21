@@ -28,9 +28,9 @@
   <div class="product-collections">
     
     
-     {% if  section.settings.collection-setting.collection  %}
+     {% if  section.settings.collection-setting  %}
        
-        {% for collection in section.settings.collection-setting.collection limit:4 %}
+        {% for collection in section.settings.collection-setting.collection  %}
 
         <div class="product">
             <a href="{{ collection.url }}">
