@@ -62,7 +62,10 @@
       "settings": {
         "collection-setting": [
           "scroll-collection",
-          "frontpage"
+          "frontpage",
+          "collection-2",
+          "collection-3",
+          "collection-4"
         ],
         "text-setting": "Collection",
         "range-top-setting": 50,
