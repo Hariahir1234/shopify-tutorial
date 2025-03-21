@@ -33,7 +33,7 @@
         {% for collection in section.settings.collection-setting.collection limit:4 %}
 
         <div class="product">
-            <a href="{{ product.url }}">
+            <a href="{{ collection.url }}">
               {{ collection.featured_image | image_url: width: master | image_tag  }}
             </a> 
         </div>
