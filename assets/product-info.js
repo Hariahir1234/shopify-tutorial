@@ -426,7 +426,7 @@ if (!customElements.get('product-info')) {
 $('.thumbnail-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.main-image',
+  asNavFor: '.main-slider',
   dots: true,
   centerMode: true,
   focusOnSelect: true
