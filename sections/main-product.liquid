@@ -83,6 +83,11 @@
             {{ image | image_url: width: 300 | image_tag }}
           </div>
         {% endfor %}
+        {% for image in product.images %}
+          <div class="thumbnail-image">
+            {{ image | image_url: width: 300 | image_tag }}
+          </div>
+        {% endfor %}
       </div>
 
       </div>
