@@ -64,10 +64,10 @@
   display: flex;
 }
 
-.collection-title {
+/* .collection-title {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
-}
+} */
 .show-more {
   display: flex;
   align-items: center;
