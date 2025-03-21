@@ -13,7 +13,7 @@
          <h2 class="font" style="font-size:{{ section.settings.select-setting }}">
               {{ section.settings.text-setting }}
         </h2>
-
+        
          <a href="{{ section.settings.collection-setting.url }}" class="show-more">
             View all   {{- 'next-arrow.svg' | inline_asset_content -}}
           </a> 
@@ -54,6 +54,7 @@
   {% endcomment %}
 
 
+    <div class="product-collections">
     {% if section.settings.collection-setting != blank %}  
         {% for collection in section.settings.collection-setting limit:5 %}
            <a href="{{ collection.url }}">
@@ -62,7 +63,7 @@
         {% endfor %}
     {% endif %}
 
-    
+    </div>
 
  </div>
 
