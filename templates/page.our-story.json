@@ -20,6 +20,7 @@
     "header_title_GcJ9Bi": {
       "type": "header-title",
       "settings": {
+        "image-picker-setting": "shopify://shop_images/Rectangle_1152.png",
         "text-setting": "OUR STORY",
         "range-top-setting": 100,
         "range-bottom-setting": 100
