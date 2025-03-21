@@ -4,6 +4,10 @@
   background: #000;
   margin: 0 auto;
 }
+
+.top h2.font {
+  font-size: 43px;
+}
 .banner__text p {
   color: white;
   margin-bottom: 10px !important;
