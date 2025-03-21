@@ -3,7 +3,7 @@
     <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
        
         <div style="text-align:center">
-            <h2 class="font scroll-trigger animate--slide-in" style="font-size:{{ section.settings.select-setting }}">
+            <h2 class="font scroll-trigger animate--slide-in">
                 {{ section.settings.text-setting }}
             </h2>
         </div>
@@ -85,30 +85,7 @@
             "unit": "px",
             "label": "Padding-Bottom",
             "default": 20
-        },
-        {
-            "type": "select",
-            "id": "select-setting",
-            "label": "Select Font Size",
-            "options": [
-                {
-                    "value": "15px",
-                    "label": "small"
-                },
-                {
-                    "value": "25px",
-                    "label": "medium"
-                },
-                {
-                    "value": "35px",
-                    "label": "large"
-                },
-                {
-                    "value": "45px",
-                    "label": "extra large"
-                }
-            ]
-        },
+        }
         
     ],
     "blocks": [
