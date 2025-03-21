@@ -55,7 +55,9 @@
 
 
     {% if section.settings.collection-setting != blank %}  
-
+        {% for collection in section.settings.collection-setting.collections %}
+          
+        {% endfor %}
     {% endif %}
 
     
