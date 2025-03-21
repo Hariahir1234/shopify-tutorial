@@ -423,7 +423,7 @@ if (!customElements.get('product-info')) {
   fade: true,
   asNavFor: '.slider-nav'
 });
-$('.thumbnail-image').slick({
+$('.thumbnail-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.main-image',
