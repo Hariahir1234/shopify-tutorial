@@ -81,7 +81,7 @@
        <div class="main-slider">
           {% for image in product.images %}
             <div>
-             {{ image | image_url: width: master | image_tag }}
+             {% render 'product-media-gallery', image | image_url: width: master | image_tag   %}
               
             </div>
           {% endfor %}
