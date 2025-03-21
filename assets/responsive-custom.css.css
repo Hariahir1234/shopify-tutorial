@@ -157,6 +157,10 @@
     margin-bottom: 30px;
   }
 
+  .top h2 {
+    font-size: 30px !important;
+  }
+
   .scroll-button {
     position: relative;
   }
