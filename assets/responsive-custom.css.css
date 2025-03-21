@@ -122,6 +122,11 @@
   }
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 1104px) {
+  h2.banner__heading.inline-richtext.hxxl {
+    margin: 0;
+    font-size: 42px;
+  }
+
   .collection-title.scroll-collection {
     width: 100%;
     display: flex;
