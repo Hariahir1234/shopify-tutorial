@@ -266,3 +266,6 @@ ul.list.list-payment {
   background: gainsboro;
   max-height: 720px;
 }
+.thumbnail-slider img {
+  max-height: 327px;
+}
