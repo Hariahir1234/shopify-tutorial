@@ -107,6 +107,9 @@
     max-height: 193px;
     height: 193px !important;
   }
+  .product img {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-device-width: 989px) {
