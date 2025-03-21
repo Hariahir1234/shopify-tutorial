@@ -100,9 +100,8 @@
       "settings": {
         "collection-setting": "scroll-collection",
         "text-setting": "Related products",
-        "range-top-setting": 20,
-        "range-bottom-setting": 20,
-        "select-setting": "45px"
+        "range-top-setting": 37,
+        "range-bottom-setting": 52
       }
     },
     "testimonials_x4TeKW": {
@@ -141,8 +140,7 @@
       "settings": {
         "text-setting": "Our Happy Clients",
         "range-top-setting": 52,
-        "range-bottom-setting": 76,
-        "select-setting": "45px"
+        "range-bottom-setting": 76
       }
     }
   },
