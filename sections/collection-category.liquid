@@ -28,6 +28,7 @@
           {% for collection in section.settings.collection-setting limit:4 %}
              <a href="{{ collection.url }}">
               {{ collection.featured_image | image_url: width: master | image_tag }}
+               <p>{{ collection.title  }}</p>
                </a> 
           {% endfor %}
              <a href="{{ section.settings.collection-setting.product.url }}">
