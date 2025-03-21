@@ -50,7 +50,10 @@
     justify-content: center;
     margin-bottom: 15px;
   }
-
+  h2.banner__heading.inline-richtext.hxxl {
+    margin: 0;
+    font-size: 42px;
+  }
   .scroll-button {
     justify-content: center;
   }
