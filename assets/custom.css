@@ -113,8 +113,9 @@
   align-items: center;
   justify-content: end;
   gap: 10px;
+  position: absolute;
+  right: 0;
 }
-
 .scroll-button .show-more img {
   width: 17%;
 }
