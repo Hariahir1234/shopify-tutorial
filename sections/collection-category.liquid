@@ -22,45 +22,18 @@
   
   </div>
     
- 
-
-{% comment %}
-  
-
-  <div class="product-collections">
-    
-    
-     {% if  section.settings.collection-setting.products  %}
-       
-        {% for collection in section.settings.collection-setting.collection limit:4 %}
-
-        <div class="product">
-            <a href="{{ product.url }}">
-              {{ product.featured_image | image_url: width: master | image_tag  }}
-            </a> 
-        </div>
-               
-        {% endfor %}
-        
-       
-     {% endif %} 
-
-    
-
-
-  
-  </div>
-
-  {% endcomment %}
-
 
     <div class="product-collections">
       {% if section.settings.collection-setting != blank %}  
-          {% for collection in section.settings.collection-setting limit:5 %}
+          {% for collection in section.settings.collection-setting limit:4 %}
              <a href="{{ collection.url }}">
               {{ collection.featured_image | image_url: width: master | image_tag }}
                </a> 
           {% endfor %}
+             <a href="{{ product.url }}">
+              {{ collection.featured_image | image_url: width: master | image_tag }}
+             </a> 
+          
       {% endif %}
 
     </div>
