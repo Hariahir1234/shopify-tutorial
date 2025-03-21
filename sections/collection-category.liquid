@@ -31,6 +31,7 @@
                </a> 
           {% endfor %}
              <a href="{{ section.settings.collection-setting.product.url }}">
+               {{section.settings.collection-setting.product.title  }}
               {{ collection.featured_image | image_url: width: master | image_tag }}
              </a> 
           
