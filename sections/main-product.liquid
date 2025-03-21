@@ -79,7 +79,7 @@
        {% comment %}   {% render 'product-media-gallery', variant_images: variant_images %}  {% endcomment %}
         <div class="product-slider">
         {% for image in product.images %}
-          <div>
+          <div class="main-image">
             {{ image | image_url: width: 300 | image_tag }}
           </div>
         {% endfor %}
