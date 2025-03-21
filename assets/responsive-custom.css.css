@@ -103,10 +103,6 @@
     gap: 40px;
   }
 
-  .product img {
-    height: 69%;
-  }
-
   .thumbnail-slider img {
     max-height: 193px;
     height: 193px !important;
