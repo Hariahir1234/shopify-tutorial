@@ -424,7 +424,7 @@ if (!customElements.get('product-info')) {
   asNavFor: '.slider-nav'
 });
 $('.thumbnail-image').slick({
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.main-image',
   dots: true,
