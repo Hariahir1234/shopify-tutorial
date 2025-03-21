@@ -1,6 +1,28 @@
+<div class="page-width">
+
+  
+  {{ section.settings.richtext-setting }}
+
+  
+</div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "custom rich text",
+    
+    "settings": [
+       {
+          "type": "text",
+           "id": "text-setting",
+           "label": "write text",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidun..<p>"
+        }
+    ],
+    "presets": [
+      {"name": "custom rich text"}
+    ]
+    
   }
 {% endschema %}
+
