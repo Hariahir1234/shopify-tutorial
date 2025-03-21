@@ -27,27 +27,27 @@
 
   <div class="product-collections">
     
-   <div class="product-collections">
-  {% if section.settings.collection_setting %}
-    {% assign selected_collection = collections[section.settings.collection_setting] %}
-
-    {% if selected_collection and selected_collection.products.size > 0 %}
-      {% for product in selected_collection.products limit:4 %}
-        <div class="product">
-          <a href="{{ product.url }}">
-            {{ product.featured_image | image_url: width: 'master' | image_tag }}
+    
+   <div class="custom-collection-list">
+  {% if section.settings.collections != blank %}
+    <div class="collection-grid">
+      {% for collection in section.settings.collections %}
+        <div class="collection-item">
+          <a href="{{ collection.url }}">
+            {% if collection.featured_image %}
+              <img src="{{ collection.featured_image | image_url: width: 'master' }}" alt="{{ collection.title }}">
+            {% else %}
+              <div class="placeholder">No Image</div>
+            {% endif %}
+            <h3>{{ collection.title }}</h3>
           </a>
-          <p>{{ product.title }}</p>
         </div>
       {% endfor %}
-    {% else %}
-      <p>No products found in the selected collection.</p>
-    {% endif %}
+    </div>
   {% else %}
-    <p>Please select a collection in the theme editor.</p>
+    <p>No collections selected. Please choose collections in the theme editor.</p>
   {% endif %}
 </div>
-
 
   
   </div>
