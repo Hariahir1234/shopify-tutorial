@@ -60,8 +60,7 @@
 
 .product-collections {
   gap: 26px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
 }
 
 .collection-title {
