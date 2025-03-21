@@ -12,6 +12,9 @@
   .products-cover {
     grid-template-columns: 1fr 1fr !important;
   }
+  .thumbnail-slider img {
+    max-height: 89px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
