@@ -137,7 +137,8 @@
 }
 
 .collection-title.scroll-collection .top {
-  width: 60%;
+  width: 100%;
+  position: relative;
 }
 .collection-title .top {
   display: flex;
