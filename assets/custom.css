@@ -40,7 +40,9 @@
   width: 24px;
   height: 24px;
 }
-
+.product-collections img {
+  width: 100%;
+}
 .slick-prev:before {
   content: "";
   background-image: url('{{ "slick-back.svg" | asset_url }}');
