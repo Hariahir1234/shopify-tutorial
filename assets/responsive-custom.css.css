@@ -157,6 +157,10 @@
     margin-bottom: 30px;
   }
 
+  .scroll-button {
+    position: relative;
+  }
+
   /* .side-blog a:nth-child(3) {
     display: none;
   } */
