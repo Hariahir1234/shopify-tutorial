@@ -297,3 +297,7 @@ ul.list.list-payment {
 .thumbnail-slider img {
   max-height: 327px;
 }
+
+.header-title-cover {
+  border: 1px solid;
+}
