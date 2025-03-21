@@ -55,7 +55,7 @@
 
 
     {% if section.settings.collection-setting != blank %}  
-        {% for collection in section.settings.collection-setting.collections %}
+        {% for collection in section.settings.collection-setting %}
             {{ collection.featured_image | image_url: width: master | image_tag }}
             
         {% endfor %}
