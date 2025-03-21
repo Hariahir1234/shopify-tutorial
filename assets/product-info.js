@@ -416,17 +416,17 @@ if (!customElements.get('product-info')) {
 }
 
 
- $('.slider-for').slick({
+ $('.main-image').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
   asNavFor: '.slider-nav'
 });
-$('.slider-nav').slick({
+$('.thumbnail-image').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
+  asNavFor: '.main-image',
   dots: true,
   centerMode: true,
   focusOnSelect: true
