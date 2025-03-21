@@ -62,11 +62,6 @@
     justify-content: center;
   }
 
-  h2.font {
-    font-size: 29px !important;
-    margin: 0;
-  }
-
   .testimonial-collection .slick-slide {
     padding: inherit;
   }
