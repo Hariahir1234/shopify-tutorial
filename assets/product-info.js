@@ -416,7 +416,7 @@ if (!customElements.get('product-info')) {
 }
 
 
- $('.main-image').slick({
+ $('.main-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
