@@ -6,7 +6,7 @@
   <div style="padding-top:{{ section.settings.range-top-setting }}px;padding-bottom:{{ section.settings.range-bottom-setting }}px">
 
   <div class="collection-title scroll-trigger animate--slide-in"> 
-    <div> &nbsp </div>
+ 
 
     <div class="top">
           
@@ -55,13 +55,13 @@
 
 
     <div class="product-collections">
-    {% if section.settings.collection-setting != blank %}  
-        {% for collection in section.settings.collection-setting limit:5 %}
-           <a href="{{ collection.url }}">
-            {{ collection.featured_image | image_url: width: master | image_tag }}
-             </a> 
-        {% endfor %}
-    {% endif %}
+      {% if section.settings.collection-setting != blank %}  
+          {% for collection in section.settings.collection-setting limit:5 %}
+             <a href="{{ collection.url }}">
+              {{ collection.featured_image | image_url: width: master | image_tag }}
+               </a> 
+          {% endfor %}
+      {% endif %}
 
     </div>
 
