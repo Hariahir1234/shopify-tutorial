@@ -30,6 +30,7 @@
 
   .product-collections {
     grid-template-columns: 1fr 1fr;
+    display: grid;
   }
 
   .collection-title.scroll-collection .top {
