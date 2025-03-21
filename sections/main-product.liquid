@@ -91,7 +91,8 @@
         <div class="thumbnail-slider">
           {% for image in product.images %}
             <div>
-              {{ image | image_url: width: master | image_tag }}
+             {{ image | image_url: width: master | image_tag }}
+              
             </div>
           {% endfor %}
         </div>
