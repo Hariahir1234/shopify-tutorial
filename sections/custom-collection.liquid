@@ -56,7 +56,7 @@
 
     {% if section.settings.collection-setting != blank %}  
         {% for collection in section.settings.collection-setting.collections %}
-            <img src="{{ collection.featured_image | image_url: width: 'master' }}" alt="{{ collection.title }}">
+            {{ collection.featured_image | image_url: width: master | image_tag }}
         {% endfor %}
     {% endif %}
 
