@@ -259,3 +259,10 @@ ul.list.list-payment {
 .product-form__input--pill input[type="radio"] + label {
   border-radius: 0 !important;
 }
+.main-slider img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  object-fit: contain;
+  background: gainsboro;
+  max-height: 720px;
+}
