@@ -5,8 +5,10 @@
     {%- form 'contact', id: 'CustomContactForm' -%}
 
       <!-- First Name & Last Name -->
+       <div class="contact__fields"> 
       <label for="first_name">{{ section.settings.first_name_label }}</label>
       <input type="text" id="first_name" name="contact[first_name]" required>
+      </div>
 
       <label for="last_name">{{ section.settings.last_name_label }}</label>
       <input type="text" id="last_name" name="contact[last_name]" required>
