@@ -115,14 +115,8 @@
           autocomplete="off"
           type="text"
           name="contact[subject]"
-          <!--
-          Keeping
-          for
-          internal
-          use
-          --
+          placeholder="Your Subject"
         >
-        placeholder="Your Subject" >
         <label class="field__label" for="subject">Your Subject</label>
       </div>
 
@@ -131,13 +125,8 @@
           rows="10"
           class="text-area field__input"
           name="contact[body]"
-          <!--
-          Corrected
-          name
-          --
-        >
-    placeholder="Message"
-  >{{ form.body }}</textarea>
+          placeholder="Message"
+        >{{ form.body }}</textarea>
         <label class="form__label field__label" for="message"> Message </label>
       </div>
 
