@@ -27,13 +27,15 @@
       <input  class="field__label" type="email" id="email" name="contact[email]" required>
                    </div>
       <!-- Subject Input -->
+                   <div class="field">
        <label class="field__input"  for="subject">{{ section.settings.subject_label }}</label>
       <input  class="field__label" type="text" id="subject" name="contact[subject]" required>
-
+                   </div>
       <!-- Message Textarea -->
+                   <div class="field">
        <label class="field__input"  for="message">{{ section.settings.message_label }}</label>
       <textarea id="message" name="contact[body]" rows="4" required></textarea>
-
+                   </div>
       <!-- Submit Button -->
       <button type="submit">{{ section.settings.button_text }}</button>
 
