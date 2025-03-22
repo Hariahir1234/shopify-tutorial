@@ -287,6 +287,7 @@ ul.list.list-payment {
 
 .about-us-cover h2 {
   font-size: 40px;
+  font-family: inherit;
 }
 
 .product-form__input--pill input[type="radio"] + label {
