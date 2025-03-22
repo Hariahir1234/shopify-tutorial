@@ -17,8 +17,8 @@
         "padding_bottom": 36
       }
     },
-    "contact_form_jek6Mn": {
-      "type": "contact-form",
+    "custom_contact_form_zNzEYX": {
+      "type": "custom-contact-form",
       "settings": {
         "heading": "Contact form",
         "heading_size": "h1",
@@ -30,6 +30,6 @@
   },
   "order": [
     "main",
-    "contact_form_jek6Mn"
+    "custom_contact_form_zNzEYX"
   ]
 }
