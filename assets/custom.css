@@ -291,6 +291,12 @@ ul.list.list-payment {
   font-weight: 900;
 }
 
+.about-us-cover h5 {
+  margin: 0;
+  font-size: 29px;
+  font-family: "Remingo";
+}
+
 .product-form__input--pill input[type="radio"] + label {
   border-radius: 0 !important;
 }
