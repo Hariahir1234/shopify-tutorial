@@ -285,6 +285,10 @@ ul.list.list-payment {
   margin: 0;
 }
 
+.about-us-cover h2 {
+  font-size: 40px;
+}
+
 .product-form__input--pill input[type="radio"] + label {
   border-radius: 0 !important;
 }
