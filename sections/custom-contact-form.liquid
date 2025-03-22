@@ -4,13 +4,16 @@
 
     {%- form 'contact', id: 'CustomContactForm' -%}
       <!-- First Name & Last Name -->
-      <div class="field">
-        <input type="text" id="first_name" name="contact[first_name]" required>
-        <label for="first_name">{{ section.settings.first_name_label }}</label>
+
+      <div class="first-name">
+        <label for="first-name">First name</label>
+        <input type="text" name="contact[first_name]" id="first-name">
       </div>
 
-      <label for="last_name">{{ section.settings.last_name_label }}</label>
-      <input type="text" id="last_name" name="contact[last_name]" required>
+      <div class="last-name">
+        <label for="last-name">Last name</label>
+        <input type="text" name="contact[last_name]" id="last-name">
+      </div>
 
       <!-- Email Input -->
       <label for="email">{{ section.settings.email_label }}</label>
