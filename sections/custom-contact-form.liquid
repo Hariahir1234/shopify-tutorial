@@ -1,50 +1,48 @@
 <section class="custom-contact-form-section">
   <div class="page-width">
-    <h2>{{ section.settings.form_title }}</h2>
+    <h2 class="h2">{{ section.settings.form_title }}</h2>
 
-    {%- form 'contact', id: 'CustomContactForm' -%}
+    {%- form 'contact', id: 'CustomContactForm', class: 'form' -%}
 
       <!-- First Name & Last Name -->
-       <div class="contact__fields"> 
-           <div class="field">
-           <input class="field__input" type="text" id="first_name" name="contact[first_name]" required>
-            <label class="field__label" for="first_name">{{ section.settings.first_name_label }}</label> 
-         </div>
+      <div class="grid grid--2-col">
+        <div class="form__field">
+          <label for="first_name" class="form__label">{{ section.settings.first_name_label }}</label>
+          <input class="form__input" type="text" id="first_name" name="contact[first_name]" required>
+        </div>
 
-             <div class="field">
-              <label class="field__input" for="last_name">{{ section.settings.last_name_label }}</label>
-              <input  class="field__label" type="text" id="last_name" name="contact[last_name]" required>
-             </div>           
-    
+        <div class="form__field">
+          <label for="last_name" class="form__label">{{ section.settings.last_name_label }}</label>
+          <input class="form__input" type="text" id="last_name" name="contact[last_name]" required>
+        </div>
       </div>
-             <div class="field">
-      <label class="field__input" for="last_name">{{ section.settings.last_name_label }}</label>
-      <input  class="field__label" type="text" id="last_name" name="contact[last_name]" required>
-             </div>
+
       <!-- Email Input -->
-                   <div class="field">
-       <label class="field__input"  for="email">{{ section.settings.email_label }}</label>
-      <input  class="field__label" type="email" id="email" name="contact[email]" required>
-                   </div>
+      <div class="form__field">
+        <label for="email" class="form__label">{{ section.settings.email_label }}</label>
+        <input class="form__input" type="email" id="email" name="contact[email]" required>
+      </div>
+
       <!-- Subject Input -->
-                   <div class="field">
-       <label class="field__input"  for="subject">{{ section.settings.subject_label }}</label>
-      <input  class="field__label" type="text" id="subject" name="contact[subject]" required>
-                   </div>
+      <div class="form__field">
+        <label for="subject" class="form__label">{{ section.settings.subject_label }}</label>
+        <input class="form__input" type="text" id="subject" name="contact[subject]" required>
+      </div>
+
       <!-- Message Textarea -->
-                   <div class="field">
-       <label class="field__input"  for="message">{{ section.settings.message_label }}</label>
-      <textarea id="message" name="contact[body]" rows="4" required></textarea>
-                   </div>
+      <div class="form__field">
+        <label for="message" class="form__label">{{ section.settings.message_label }}</label>
+        <textarea id="message" name="contact[body]" rows="4" class="form__textarea" required></textarea>
+      </div>
+
       <!-- Submit Button -->
-      <button type="submit">{{ section.settings.button_text }}</button>
+      <button type="submit" class="button button--primary">{{ section.settings.button_text }}</button>
 
     {%- endform -%}
 
     {% if form.posted_successfully? %}
-      <p class="success-message">{{ section.settings.success_message }}</p>
+      <p class="form__success">{{ section.settings.success_message }}</p>
     {% endif %}
-
   </div>
 </section>
 
@@ -62,31 +60,31 @@
       "type": "text",
       "id": "first_name_label",
       "label": "First Name Label",
-      "default": "First Name:"
+      "default": "First Name"
     },
     {
       "type": "text",
       "id": "last_name_label",
       "label": "Last Name Label",
-      "default": "Last Name:"
+      "default": "Last Name"
     },
     {
       "type": "text",
       "id": "email_label",
       "label": "Email Label",
-      "default": "Email:"
+      "default": "Email"
     },
     {
       "type": "text",
       "id": "subject_label",
       "label": "Subject Label",
-      "default": "Subject:"
+      "default": "Subject"
     },
     {
       "type": "text",
       "id": "message_label",
       "label": "Message Label",
-      "default": "Message:"
+      "default": "Message"
     },
     {
       "type": "text",
