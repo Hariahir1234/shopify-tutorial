@@ -302,3 +302,10 @@ ul.list.list-payment {
 .header-title-cover h2 {
   color: white;
 }
+
+.about-us-cover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
