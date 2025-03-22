@@ -1,3 +1,7 @@
+.about-us-cover .right-side img {
+  width: 21%;
+  margin: 20px 0;
+}
 .line {
   width: 7%;
   height: 4px;
@@ -228,7 +232,10 @@ h2.banner__heading.inline-richtext {
 
   gap: 4px;
 }
-
+.about-us-cover .right-side img {
+  width: 21%;
+  margin: 20px 0;
+}
 .about-us-cover .image img {
   width: 100%;
 }
