@@ -8,10 +8,9 @@
 
          <div class="right-side"> 
                 <h5> {{ section.settings.title-first-setting }} </h5>
-                 <h2> {{ section.settings.title-second-setting }}  </h2>
+                 <h2> {{ section.settings.title-second-setting | upcase }}  </h2>
                   <p> {{ section.settings.content-setting }}</p>
-                  <img src="{{ section.settings.image-picker-setting | image_url: width: 300 | image_tag  }}">  
-                   
+           <img src="{{ section.settings.sign-image-picker-setting | image_url: width: 300 | image_tag  }}">
          </div>
       
       
