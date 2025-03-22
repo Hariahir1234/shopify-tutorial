@@ -27,10 +27,6 @@
       <!-- Submit Button -->
       <button type="submit">{{ section.settings.button_text }}</button>
     {%- endform -%}
-
-    {% if form.posted_successfully? %}
-      <p class="success-message">{{ section.settings.success_message }}</p>
-    {% endif %}
   </div>
 </section>
 
