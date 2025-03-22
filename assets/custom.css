@@ -320,6 +320,6 @@ ul.list.list-payment {
 .about-us-cover {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
 }
