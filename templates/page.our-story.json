@@ -46,6 +46,8 @@
     "about_us_jaGmCB": {
       "type": "about-us",
       "settings": {
+        "range-top-setting": 20,
+        "range-bottom-setting": 87,
         "image-picker-setting": "shopify://shop_images/banner-1-675x600_1.png",
         "sign-image-picker-setting": "shopify://shop_images/sign_1.png",
         "title-first-setting": "About",
