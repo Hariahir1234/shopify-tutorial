@@ -17,12 +17,12 @@
         "padding_bottom": 36
       }
     },
-    "form": {
+    "contact_form_jek6Mn": {
       "type": "contact-form",
       "settings": {
-        "heading": "",
+        "heading": "Contact form",
         "heading_size": "h1",
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -30,6 +30,6 @@
   },
   "order": [
     "main",
-    "form"
+    "contact_form_jek6Mn"
   ]
 }
