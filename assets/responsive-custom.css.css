@@ -23,6 +23,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .about-us-cover {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
   .top h2 {
     font-size: 30px !important;
     margin-bottom: 0;
