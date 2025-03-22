@@ -129,6 +129,10 @@
 }
 
 @media screen and (max-device-width: 989px) {
+  .collection-title.scroll-trigger.animate--slide-in {
+    display: flex;
+    flex-direction: column;
+  }
   .right-side p {
     font-size: 11px !important;
   }
