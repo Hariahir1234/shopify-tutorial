@@ -118,7 +118,17 @@
         <label for="message">Message</label>
         <textarea name="contact[body]" id="message"></textarea>
       </div>
-
+      <!-- Message Field -->
+      <div class="field">
+        <textarea
+          rows="5"
+          class="text-area field__input"
+          name="contact[body]"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <label class="form__label field__label" for="contact[body]">Your Message</label>
+      </div>
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
