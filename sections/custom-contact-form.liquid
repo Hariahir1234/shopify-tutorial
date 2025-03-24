@@ -108,17 +108,11 @@
           </small>
         {%- endif -%}
       </div>
+
       <!-- Subject Field -->
       <div class="field">
-        <input
-          class="field__input"
-          type="text"
-          name="contact[subject]"
-          id="subject"
-          placeholder="Your Subject"
-          required
-        >
-        <label class="field__label" for="subject">Your Subject</label>
+        <textarea class="field__input" name="contact[message]" id="message" placeholder="Your Message"></textarea>
+        <label class="field__label" for="message">Message</label>
       </div>
 
       <!-- Message Field -->
