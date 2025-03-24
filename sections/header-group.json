@@ -53,20 +53,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "header_title_wDnPwL": {
-      "type": "header-title",
-      "settings": {
-        "image-picker-setting": "shopify://shop_images/Rectangle_1168.png",
-        "text-setting": "Contact Us",
-        "range-top-setting": 69,
-        "range-bottom-setting": 75
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "header_title_wDnPwL"
+    "header"
   ]
 }
