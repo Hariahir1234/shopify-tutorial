@@ -117,7 +117,7 @@
           name="contact[subject]"
           placeholder="Your Subject"
         >
-        <label class="field__label" for="contact[subject]">Your Subject</label>
+        <label class="field__label" for="subject">Your Subject</label>
       </div>
 
       <div class="field">
@@ -125,7 +125,8 @@
           rows="10"
           class="text-area field__input"
           name="contact[body]"
-          placeholder="Message">Message</textarea>
+          placeholder="Message"
+        >{{ form.body }}</textarea>
         <label class="form__label field__label" for="contact[body]"> Message </label>
       </div>
 
