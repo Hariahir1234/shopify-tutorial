@@ -117,14 +117,13 @@
       <!-- Message Field -->
       <div class="field">
         <textarea
-          id="{{ formid }}--message"
           rows="5"
           class="text-area field__input"
           name="contact[body]"
           placeholder="Your Message"
           required
         ></textarea>
-        <label class="form__label field__label" for="{{ formid }}--message">{{ contact.form.message }}</label>
+        <label class="form__label field__label" for="contact[body]">Your Message</label>
       </div>
       <div class="contact__button">
         <button type="submit" class="button">
