@@ -109,16 +109,9 @@
         {%- endif -%}
       </div>
 
-      <!-- Message Field -->
       <div class="field">
-        <input
-          type="text"
-          name="contact[message]"
-          class="field__input"
-          id="message"
-        >
-
-        <label class="field__label" for="message">Message</label>
+        <label for="message">Message</label>
+        <textarea name="contact[body]" id="message"></textarea>
       </div>
 
       <div class="contact__button">
