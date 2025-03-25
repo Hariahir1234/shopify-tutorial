@@ -341,6 +341,10 @@ ul.list.list-payment {
     font-size: 20px;
 }
 
+.social-media-cover p {
+    margin: 10px 0;
+}
+
 .contact__button button {
     width: 100%;
 }
