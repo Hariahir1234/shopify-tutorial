@@ -336,6 +336,11 @@ ul.list.list-payment {
     margin: 0;
 }
 
+.social-media-cover h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
 .contact__button button {
     width: 100%;
 }
