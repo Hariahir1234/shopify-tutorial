@@ -379,7 +379,7 @@ ul.list.list-payment {
   color: white;
 }
 
-button#Subscribe{
+.email-signup-cover button#Subscribe{
  padding:20px;
   background:black;
   color:white;
