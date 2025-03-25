@@ -20,13 +20,7 @@
   width: 70% !important;
   margin: 0 auto;
 }
-.email-signup-cover button#Subscribe {
-    width: fit-content;
-    background: black;
-    color: white;
-    padding: 20px 30px;
-    font-size: 11px;
-}
+
 .product-collections p {
   text-align: center;
   color: black;
@@ -344,6 +338,15 @@ ul.list.list-payment {
     border-bottom: 1px solid;
     padding: 30px 0;
     margin-top: 60px;
+}
+
+.email-signup-cover .line {
+    width: 5%;
+}
+
+.social-media-cover .cover {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .social-media-cover h5 {
