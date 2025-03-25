@@ -379,6 +379,9 @@ ul.list.list-payment {
   color: white;
 }
 
+.email-signup-cover .field input {
+    background: #F3F3F3;
+}
 .email-signup-cover button#Subscribe {
     padding: 0 70px;
     background: #000;
