@@ -296,6 +296,9 @@ ul.list.list-payment {
   margin: 0;
 }
 
+.email-signup-cover .field:after {
+    box-shadow: none;
+}
 .about-us-cover h2 {
   font-size: 40px;
   font-family: inherit !important;
@@ -310,12 +313,6 @@ ul.list.list-payment {
   margin-bottom: 5px;
 }
 
-.email-signup-cover button#Subscribe {
-    padding: 11px 51px;
-    background: black;
-    color: white;
-    font-size: 11px;
-}
 .product-form__input--pill input[type="radio"] + label {
   border-radius: 0 !important;
 }
@@ -350,10 +347,6 @@ ul.list.list-payment {
     width: 5%;
 }
 
-.social-media-cover .cover {
-    width: 50%;
-    margin: 0 auto;
-}
 
 .social-media-cover h5 {
     font-size: 27px;
