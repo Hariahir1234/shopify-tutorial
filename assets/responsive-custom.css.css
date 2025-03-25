@@ -24,8 +24,11 @@
 
 @media only screen and (max-width: 768px) {
 
-
   .email-signup-cover button#Subscribe {
+    padding: 0 52px;
+
+}
+  
   .contact-page-cover {
     display: grid;
     grid-template-columns: 1fr;
