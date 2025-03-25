@@ -50,15 +50,52 @@
       "settings": {
         "text-content-setting": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequataliquam erat volutpat, ut wisi enim ad minim veniam. dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequataliquam erat volutpat, ut wisi enim ad minim veniam.",
         "heading": "Contact form",
+        "social-title": "Instagram",
+        "social-preview": "@forpreview",
+        "social-content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 24,
         "padding_bottom": 36
       }
+    },
+    "newsletter_e779TN": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_kMrYiH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up for the newsletter",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_RzD3Nb": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_CfK33w": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_kMrYiH",
+        "paragraph_RzD3Nb",
+        "email_form_CfK33w"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "custom_contact_form_zNzEYX"
+    "custom_contact_form_zNzEYX",
+    "newsletter_e779TN"
   ]
 }
