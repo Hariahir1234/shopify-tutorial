@@ -310,7 +310,7 @@ ul.list.list-payment {
   margin-bottom: 5px;
 }
 
-button#Subscribe {
+.email-signup-cover button#Subscribe {
     padding: 11px 51px;
     background: black;
     color: white;
