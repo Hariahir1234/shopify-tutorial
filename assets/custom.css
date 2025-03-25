@@ -335,12 +335,11 @@ ul.list.list-payment {
     font-family: 'Remingo';
     margin: 0;
 }
-
 .social-media-cover h4 {
     margin-bottom: 0;
     font-size: 20px;
+    margin-top: 20px;
 }
-
 .social-media-cover p {
     margin: 10px 0;
 }
