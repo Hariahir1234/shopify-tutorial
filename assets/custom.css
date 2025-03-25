@@ -353,8 +353,8 @@ ul.list.list-payment {
 }
 .social-media-cover p {
     margin: 10px 0;
+    margin-bottom: 5px;
 }
-
 .contact__button button {
     width: 100%;
 }
