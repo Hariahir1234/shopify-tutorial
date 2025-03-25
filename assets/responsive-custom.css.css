@@ -27,6 +27,10 @@
     margin-top: 30px;
 }
 
+  .shopify-section.collection-cover .page-width div {
+    padding: 0px !important;
+}
+
   .email-signup-cover button#Subscribe {
     padding: 0 52px;
 
