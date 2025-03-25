@@ -324,7 +324,7 @@ ul.list.list-payment {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .thumbnail-slider img {
