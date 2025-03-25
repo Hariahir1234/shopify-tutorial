@@ -329,10 +329,10 @@ ul.list.list-payment {
 .contact-page-cover .left-side p {
     margin: 10px 0;
 }
-.social-media-cover {
+.social-media-cover .cover {
     width: 20%;
     margin: 0 auto;
-    padding: 30px 0;
+
 }
 .social-media-cover h5 {
     font-size: 30px;
