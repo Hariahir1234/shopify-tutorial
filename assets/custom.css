@@ -320,6 +320,10 @@ ul.list.list-payment {
   background: gainsboro;
   max-height: 720px;
 }
+.contact-page-cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .thumbnail-slider img {
   max-height: 327px;
 }
