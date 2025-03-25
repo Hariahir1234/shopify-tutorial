@@ -379,12 +379,11 @@ ul.list.list-payment {
   color: white;
 }
 
-.email-signup-cover button#Subscribe{
- padding:20px;
-  background:black;
-  color:white;
+.email-signup-cover button#Subscribe {
+    padding: 0 70px;
+    background: #000;
+    color: #fff;
 }
-
 .about-us-cover {
   display: grid;
   grid-template-columns: 1fr 1fr;
