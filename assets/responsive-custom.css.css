@@ -23,6 +23,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .contact-page-cover {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 0;
+}
   .about-us-cover {
     grid-template-columns: 1fr;
     gap: 20px;
