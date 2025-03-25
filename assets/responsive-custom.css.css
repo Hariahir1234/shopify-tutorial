@@ -23,6 +23,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .product__title {
+    margin-top: 30px;
+}
 
   .email-signup-cover button#Subscribe {
     padding: 0 52px;
