@@ -19,7 +19,20 @@
     },
     "custom_contact_form_zNzEYX": {
       "type": "custom-contact-form",
+      "blocks": {
+        "form_details_Nmx7tV": {
+          "type": "form-details",
+          "settings": {
+            "form-detail-title-setting": "General",
+            "form-detail-setting": "info@craftfaction.com"
+          }
+        }
+      },
+      "block_order": [
+        "form_details_Nmx7tV"
+      ],
       "settings": {
+        "text-content-setting": "",
         "heading": "Contact form",
         "heading_size": "h1",
         "color_scheme": "",
