@@ -111,13 +111,14 @@
 
     <div class="field">
       <input
+        name="contact[{{ contact.form.subject }}]"
         class="field__input"
         id="subject"
         type="text"
-        name="contact[subject]"
+        <!-- name="contact[subject]" -->
         placeholder="Enter Subject"
       >
-      <label class="field__label" for="subject">Subject</label>
+      <label class="field__label" for="contact[{{ contact.form.subject }}]">Subject</label>
     </div>
 
       <div class="field">
