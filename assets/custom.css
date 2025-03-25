@@ -383,7 +383,7 @@ ul.list.list-payment {
     background: #F3F3F3;
 }
 
-.email-signup-cover .field:after {
+.email-signup-cover .field:before {
    box-shadow:none
 }
 .email-signup-cover button#Subscribe {
