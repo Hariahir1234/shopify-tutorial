@@ -379,6 +379,12 @@ ul.list.list-payment {
   color: white;
 }
 
+button#Subscribe{
+ padding:20px;
+  background:black;
+  color:white;
+}
+
 .about-us-cover {
   display: grid;
   grid-template-columns: 1fr 1fr;
