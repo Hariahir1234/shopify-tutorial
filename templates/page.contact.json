@@ -26,10 +26,26 @@
             "form-detail-title-setting": "General",
             "form-detail-setting": "info@craftfaction.com"
           }
+        },
+        "form_details_G6LCWd": {
+          "type": "form-details",
+          "settings": {
+            "form-detail-title-setting": "Press",
+            "form-detail-setting": "press@craftfaction.com"
+          }
+        },
+        "form_details_9iMYTL": {
+          "type": "form-details",
+          "settings": {
+            "form-detail-title-setting": "Shipping",
+            "form-detail-setting": "shipping@craftfaction.com"
+          }
         }
       },
       "block_order": [
-        "form_details_Nmx7tV"
+        "form_details_Nmx7tV",
+        "form_details_G6LCWd",
+        "form_details_9iMYTL"
       ],
       "settings": {
         "text-content-setting": "",
