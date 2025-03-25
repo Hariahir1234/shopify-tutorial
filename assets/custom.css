@@ -334,3 +334,9 @@ ul.list.list-payment {
   gap: 50px;
   align-items: center;
 }
+
+.contact-page-cover .left-side h5 {
+    font-size: 30px;
+    font-family: 'Remingo';
+    margin-bottom: 0;
+}
