@@ -330,6 +330,10 @@ ul.list.list-payment {
     margin: 10px 0;
 }
 
+.contact__button button {
+    width: 100%;
+}
+
 .contact-page-cover .box {
     margin-bottom: 20px;
 }
