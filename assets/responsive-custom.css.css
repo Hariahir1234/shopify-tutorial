@@ -30,7 +30,10 @@
     gap: 0;
     margin-top: 0;
 }
+.social-media-cover {
 
+    margin-top: 20px;
+}
   .social-media-cover .cover {
     width: 50%;
     margin: 0 auto;
