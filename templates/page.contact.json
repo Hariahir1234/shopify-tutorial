@@ -69,12 +69,6 @@
             "heading_size": "h2"
           }
         },
-        "paragraph_RzD3Nb": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
-          }
-        },
         "email_form_CfK33w": {
           "type": "email_form",
           "settings": {}
@@ -82,7 +76,6 @@
       },
       "block_order": [
         "heading_kMrYiH",
-        "paragraph_RzD3Nb",
         "email_form_CfK33w"
       ],
       "settings": {
