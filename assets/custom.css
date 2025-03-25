@@ -330,6 +330,12 @@ ul.list.list-payment {
     margin: 10px 0;
 }
 
+.social-media-cover h5 {
+    font-size: 30px;
+    font-family: 'Remingo';
+    margin: 0;
+}
+
 .contact__button button {
     width: 100%;
 }
