@@ -326,7 +326,9 @@ ul.list.list-payment {
     gap: 10%;
     margin-top: 75px;
 }
-
+.contact-page-cover .left-side p {
+    margin: 10px 0;
+}
 .thumbnail-slider img {
   max-height: 327px;
 }
