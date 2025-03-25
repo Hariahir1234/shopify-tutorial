@@ -340,6 +340,10 @@ ul.list.list-payment {
     margin-top: 60px;
 }
 
+.email-signup-cover .line {
+    width: 5%;
+}
+
 .social-media-cover h5 {
     font-size: 27px;
     font-family: Remingo;
