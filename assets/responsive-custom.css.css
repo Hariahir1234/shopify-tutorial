@@ -30,6 +30,12 @@
     gap: 0;
     margin-top: 0;
 }
+
+  .social-media-cover .cover {
+    width: 50%;
+    margin: 0 auto;
+}
+
   .about-us-cover {
     grid-template-columns: 1fr;
     gap: 20px;
