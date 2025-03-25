@@ -109,15 +109,30 @@
         {%- endif -%}
       </div>
 
-  <div class="field">
-    <input
-      class="field__input"
-      id="subject"
-      type="text"
-      name="contact[subject]"
-      placeholder="Enter Subject">
-    <label class="field__label" for="subject">Subject</label>
-  </div>
+    <div class="field">
+      <input
+        class="field__input"
+        id="subject"
+        type="text"
+        name="contact[subject]"
+        placeholder="Enter Subject">
+      <label class="field__label" for="subject">Subject</label>
+    </div>
+
+        <div class="field">
+        <textarea
+          rows="10"
+          id="message"
+          class="text-area field__input"
+          name="contact[message]"
+          placeholder="Your Message"
+        >
+          {{- form.body -}}
+        </textarea>
+        <label class="form__label field__label" for="ContactForm-body">
+          {{- 'templates.contact.form.comment' | t -}}
+        </label>
+      </div>
 
       <div class="field">
         <input
