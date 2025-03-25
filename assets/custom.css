@@ -330,9 +330,8 @@ ul.list.list-payment {
     margin: 10px 0;
 }
 .social-media-cover .cover {
-    width: 20%;
+    width: 16%;
     margin: 0 auto;
-
 }
 .social-media-cover {
     border-top: 1px solid;
@@ -351,6 +350,8 @@ ul.list.list-payment {
     font-size: 20px;
     margin-top: 10px;
 }
+
+
 .social-media-cover p {
     margin: 10px 0;
     margin-bottom: 5px;
