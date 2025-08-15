@@ -48,9 +48,7 @@
                       <!-- Product Image -->
                       <div class="product-image">
                         {% if product.featured_image %}
-                          <img src="{{ product.featured_image | img_url: '300x300' }}" 
-                               alt="{{ product.title }}" 
-                               loading="lazy">
+                          <img src="{{ product.featured_image | img_url: '300x300' }}" >
                         {% else %}
                           <div class="no-image">
                             <span>No Image</span>
